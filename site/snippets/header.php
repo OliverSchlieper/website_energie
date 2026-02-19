@@ -12,7 +12,7 @@
 */
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
 
   <meta charset="utf-8">
@@ -60,7 +60,8 @@
     */
     ?>
     <a class="logo" href="<?= $site->url() ?>">
-      <?= $site->title()->esc() ?>
+      <img src="<?= url('assets\icons\HM_Logo_rot_RGB.svg') ?>" 
+       alt="<?= $site->title()->esc() ?>" />
     </a>
 
     <nav class="menu">
