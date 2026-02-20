@@ -29,6 +29,8 @@ columns:
         type: pages
         create: default
         templates:
-          - about
+          - projekte
+          - buch
+          - autoren
           - home
           - default

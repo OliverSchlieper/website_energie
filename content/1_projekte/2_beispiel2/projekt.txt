@@ -1,0 +1,29 @@
+Title: beispiel2
+
+----
+
+Slug: 
+
+----
+
+Description: beispiel numero due
+
+----
+
+Type: link
+
+----
+
+Youtubeurl: 
+
+----
+
+Externalurl: https://www.youtube.com/
+
+----
+
+Cover: - 'file://v0ydiagdfioyezrt'
+
+----
+
+Uuid: capy5oxfwrytj91i

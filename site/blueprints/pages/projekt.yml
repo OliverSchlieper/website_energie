@@ -1,0 +1,46 @@
+title: Projekt
+
+tabs:
+  content:
+    fields:
+
+      title:
+        type: text
+        required: true
+
+      description:
+        type: textarea
+        size: small
+        buttons: false
+
+      type:
+        label: Projekttyp
+        type: radio
+        default: youtube
+        options:
+          youtube: YouTube Video
+          link: Externe Seite
+
+      youtubeUrl:
+        label: YouTube URL
+        type: url
+        when:
+          type: youtube
+
+      externalUrl:
+        label: Externe URL
+        type: url
+        when:
+          type: link
+
+      cover:
+        label: Vorschaubild (optional)
+        type: files
+        max: 1
+        uploads:
+          template: image
+
+  settings:
+    fields:
+      slug:
+        type: slug

@@ -1,0 +1,14 @@
+title: Projekte
+
+options:
+  changeSlug: false
+  delete: false
+
+sections:
+  projekte:
+    type: pages
+    label: Projekte
+    template: projekt
+    layout: cards
+    image:
+      cover: true

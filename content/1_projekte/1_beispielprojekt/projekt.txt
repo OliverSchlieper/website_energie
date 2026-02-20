@@ -1,0 +1,29 @@
+Title: Beispielprojekt
+
+----
+
+Slug: 
+
+----
+
+Description: dies ist nur ein beispiel
+
+----
+
+Type: youtube
+
+----
+
+Youtubeurl: https://www.youtube.com/watch?v=op5iP71Bg6w&list=PLTep5U-3mg9EfgnQ08XDRs4vSOmhw2JWz&index=6
+
+----
+
+Externalurl: 
+
+----
+
+Cover: - 'file://whdipfaa2y0a4z1f'
+
+----
+
+Uuid: vbanbe1gn1avhabj
