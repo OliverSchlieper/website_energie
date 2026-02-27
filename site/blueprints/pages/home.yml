@@ -1,34 +1,38 @@
-# Each page blueprint must have a title, the title may be different from the file name
-title: Home
-
-# Each page can have an icon that is shown in page listings when no preview image is available.
-icon: 🏠
-
-# Page options allow you to control how users can interact with the page.
-# Here we prevent changing the page status (the home page cannot be renamed or deleted by default)
-# More about page options: https://getkirby.com/docs/reference/panel/blueprints/page#options
-options:
-  changeStatus: false
-
-# Here we define an info section and a pages section (`photography`)
-sections:
-  content:
-    type: fields
-    fields:
-      headline:
-        type: text
-        width: 1/2
-      gap:
-        width: 1/2
-      subheadline:
-        type: text
-        width: 1/2
-
-  # The photography section extends a pages section defined in the `/site/blueprints/section/album.yml` blueprint
-  # More about reusing and extending sections: https://getkirby.com/docs/guide/blueprints/extending-blueprints#reusing-and-extending-sectionss
-  photography:
-    label: Photography
-    extends: sections/albums
-    status: listed
-    size: small
-    help: All projects for the homepage are being pulled from the photography page.
+title: Landingpage
+fields:
+  main_content:
+    label: Seiten-Inhalt (Modular)
+    type: blocks
+    fieldsets:
+      - heading
+      - text
+      - image
+      - quote
+      # Hier fügen wir eigene, spezielle Blöcke für dein Buch hinzu:
+      - book_hero:
+          label: Buch-Vorstellung (Hero)
+          fields:
+            title:
+              type: text
+            subtitle:
+              type: textarea
+            cover:
+              type: files
+              max: 1
+            button_text:
+              type: text
+            button_link:
+              type: url
+      - feature_list:
+          label: Buch-Highlights
+          fields:
+            features:
+              type: structure
+              fields:
+                icon:
+                  type: text
+                  help: "z.B. 📖 oder ⭐"
+                title:
+                  type: text
+                description: 
+                  type: textarea

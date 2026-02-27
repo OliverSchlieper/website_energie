@@ -1,1 +1,9 @@
 Title: Mægazine
+
+----
+
+Footer-text:
+
+Hochschule München © 2026 · [Impressum](https://hm.edu/impressum/index.de.html) · [Datenschutz](https://hm.edu/datenschutz/index.de.html)
+
+Entwickelt von [Dein Name/Portfolio](https://deinedomain.de) · Realisiert mit [Kirby CMS](https://getkirby.com)

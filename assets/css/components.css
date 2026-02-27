@@ -1,0 +1,31 @@
+/* assets/css/components.css */
+
+.blueprint-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px; /* Abstand zwischen Text und Pfeil */
+  padding: 10px 25px;
+  background-color: #e6cfe6;
+  color: #333;
+  border: 2px dashed #333;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.blueprint-button:hover {
+  background-color: #dcb3dc;
+  border-style: solid;
+}
+
+/* Der Pfeil (nur noch der kleine aus ::after) */
+.blueprint-button::after {
+  content: '→';
+  font-size: 1.8rem; /* Hier die Größe anpassen - 1.8rem ist deutlich größer als 1.4rem */
+  transition: transform 0.2s ease;
+}
+
+.blueprint-button:hover::after {
+  transform: translateX(5px);
+}
