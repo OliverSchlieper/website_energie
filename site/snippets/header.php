@@ -60,7 +60,7 @@
     */
     ?>
     <a class="logo" href="<?= $site->url() ?>">
-      <img src="<?= url('assets\icons\HM_Logo_rot_RGB.svg') ?>" 
+      <img src="<?= url('assets\icons\HM_Logo_rot_cube_RGB.svg') ?>" 
        alt="<?= $site->title()->esc() ?>" />
     </a>
 
