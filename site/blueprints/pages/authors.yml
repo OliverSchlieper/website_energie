@@ -1,0 +1,36 @@
+title: Autoren
+icon: users
+fields:
+  headline:
+    label: Überschrift (Seite)
+    type: text
+    placeholder: "z.B. Wer steckt hinter diesem Buch?"
+    default: "Über die Autoren"
+  
+  authors_list:
+    label: Autoren-Liste
+    type: structure
+    fields:
+      name:
+        label: Vollständiger Name
+        type: text
+      role:
+        label: Rolle / Titel
+        type: text
+        placeholder: "z.B. Dozent für Energiewirtschaft"
+      bio:
+        label: Biografie / Vita
+        type: textarea
+        size: medium
+        buttons:
+          - bold
+          - italic
+        help: "Erzähle hier mehr über den Werdegang und die Expertise."
+      email:
+        label: E-Mail Adresse
+        type: text
+      image:
+        label: Porträtfoto
+        type: files
+        max: 1
+        layout: cards

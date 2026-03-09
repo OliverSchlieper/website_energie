@@ -1,0 +1,15 @@
+name: Argumente & Highlights  # Das steht oben im Block
+icon: star-bold
+fields:
+  arguments:
+    label: Die wichtigsten Thesen des Buches
+    type: structure
+    fields:
+      title:
+        label: Schlagwort / These
+        type: text
+        placeholder: "z.B. Praxisnahe Strategien"
+      text:
+        label: Erläuterung
+        type: textarea
+        placeholder: "Beschreibe hier kurz, was der Leser lernt..."

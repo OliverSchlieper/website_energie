@@ -1,0 +1,20 @@
+name: Buch-Vorstellung (Hero)
+icon: book
+fields:
+  title:
+    label: Buchtitel
+    type: text
+  subtitle:
+    label: Untertitel / Kurzbeschreibung
+    type: textarea
+  cover:
+    label: Buchcover (Bild)
+    type: files
+    max: 1
+  button_text:
+    label: Button Beschriftung
+    type: text
+    placeholder: "z.B. Jetzt vorbestellen"
+  button_link:
+    label: Button Link
+    type: url

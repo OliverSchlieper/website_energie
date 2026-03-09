@@ -1,31 +1,8 @@
-columns:
-  - width: 1/2
-    sections:
-      albums: sections/albums
+title: Dashboard
 
-  - width: 1/2
-    sections:
-      notes:
-        extends: sections/notes
-        status: listed
-
-      pages:
-        type: pages
-        create: default
-        templates:
-          - about
-          - home
-          - default
-
-      # Ab hier ist der Footer-Bereich:
-      footer_section:
-        type: fields
-        fields:
-          footer_text:
-            label: Fußnote (Inhalt)
-            type: textarea
-            size: small
-            buttons:
-              - bold
-              - italic
-              - link
+sections:
+  all_pages:
+    type: pages
+    headline: Alle vorhandenen Ordner
+    status: all # Zeigt auch Entwürfe und unsichtbare Seiten
+    layout: list

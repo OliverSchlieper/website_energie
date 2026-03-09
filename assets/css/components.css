@@ -1,31 +1,177 @@
-/* assets/css/components.css */
+/* --- 1. GLOBALE KOMPONENTEN-VARIABLEN --- */
+:root {
+  --blueprint-pink: #e6cfe6;
+  --blueprint-pink-hover: #dcb3dc;
+  --blueprint-bg-light: #fdfaff;
+  --blueprint-dark: #333;
+  --hm-blue: #003366;
+}
 
+/* --- 2. CTA BUTTON (Der lila Blueprint-Button) --- */
 .blueprint-button {
   display: inline-flex;
   align-items: center;
-  gap: 15px; /* Abstand zwischen Text und Pfeil */
-  padding: 10px 25px;
-  background-color: #e6cfe6;
-  color: #333;
-  border: 2px dashed #333;
+  gap: 15px;
+  padding: 12px 30px;
+  background-color: var(--blueprint-pink);
+  color: var(--blueprint-dark);
+  border: 2px dashed var(--blueprint-dark);
   text-decoration: none;
   font-family: sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .blueprint-button:hover {
-  background-color: #dcb3dc;
+  background-color: var(--blueprint-pink-hover);
   border-style: solid;
 }
 
-/* Der Pfeil (nur noch der kleine aus ::after) */
 .blueprint-button::after {
   content: '→';
-  font-size: 1.8rem; /* Hier die Größe anpassen - 1.8rem ist deutlich größer als 1.4rem */
+  font-size: 1.8rem;
   transition: transform 0.2s ease;
 }
 
 .blueprint-button:hover::after {
   transform: translateX(5px);
+}
+
+/* --- 3. BOOK HERO (Großes Bild links, Text rechts) --- */
+.book-hero {
+  padding: 100px 0;
+  max-width: 1400px; /* Erhöht für mehr Platz */
+  margin: 0 auto;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  gap: 80px; /* Mehr Abstand für einen cleanen Look */
+  padding: 0 40px;
+}
+
+.hero-image {
+  flex: 1.5; /* Gibt dem Bild deutlich mehr Raum als dem Text */
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  max-width: 550px; /* Bild deutlich vergrößert */
+  width: 100%;
+  height: auto;
+  /* Massiver technischer Schatten */
+  box-shadow: 25px 25px 0px var(--blueprint-pink); 
+  border: 2px solid var(--blueprint-dark);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Kleiner Effekt: Bild hebt sich beim Hover leicht ab */
+.hero-image img:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 30px 30px 0px var(--blueprint-pink-hover);
+}
+
+.hero-content {
+  flex: 1; /* Text nimmt weniger Platz ein als das Bild */
+}
+
+.hero-title {
+  font-size: 4rem; /* Große, starke Typografie */
+  margin-bottom: 1.5rem;
+  color: var(--blueprint-dark);
+  line-height: 1.1;
+}
+
+.hero-subtitle {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 3rem;
+}
+
+/* --- 4. ARGUMENTE SEKTION (Vorteils-Grid) --- */
+.arguments-section {
+  padding: 6rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.arguments-headline {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 2.8rem;
+  color: var(--blueprint-dark);
+}
+
+.arguments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  padding: 0 20px;
+}
+
+.argument-card {
+  background-color: var(--blueprint-bg-light);
+  border: 2px dashed var(--blueprint-dark);
+  padding: 3rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.argument-card:hover {
+  transform: translateY(-10px);
+  background-color: var(--blueprint-pink);
+  border-style: solid;
+}
+
+.argument-title {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  color: var(--hm-blue);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.argument-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* --- 5. RESPONSIVE DESIGN --- */
+@media (max-width: 1024px) {
+  .hero-container {
+    gap: 40px;
+  }
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .hero-image {
+    order: 1; /* Bild oben */
+    margin-bottom: 3rem;
+  }
+
+  .hero-content {
+    order: 2; /* Text unten */
+  }
+
+  .hero-image img {
+    max-width: 100%;
+    box-shadow: 15px 15px 0px var(--blueprint-pink);
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
 }

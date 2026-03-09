@@ -1,38 +1,25 @@
-title: Landingpage
-fields:
-  main_content:
-    label: Seiten-Inhalt (Modular)
-    type: blocks
-    fieldsets:
-      - heading
-      - text
-      - image
-      - quote
-      # Hier fügen wir eigene, spezielle Blöcke für dein Buch hinzu:
-      - book_hero:
-          label: Buch-Vorstellung (Hero)
-          fields:
-            title:
-              type: text
-            subtitle:
-              type: textarea
-            cover:
-              type: files
-              max: 1
-            button_text:
-              type: text
-            button_link:
-              type: url
-      - feature_list:
-          label: Buch-Highlights
-          fields:
-            features:
-              type: structure
-              fields:
-                icon:
-                  type: text
-                  help: "z.B. 📖 oder ⭐"
-                title:
-                  type: text
-                description: 
-                  type: textarea
+fieldsets:
+  buch:
+    label: Buch-Vorstellung
+    icon: book
+    fields:
+      title:
+        label: Große Überschrift
+        type: text
+        placeholder: "z.B. Energie Verstehen"
+      text:
+        label: Einleitungstext
+        type: textarea
+        size: medium
+      cover:
+        label: Buch-Cover (PNG/JPG)
+        type: files
+        max: 1
+        layout: cards
+      button_text:
+        label: Button Text
+        type: text
+        default: "Jetzt bestellen"
+      button_link:
+        label: Button Ziel (URL)
+        type: text

@@ -1,0 +1,29 @@
+Title: Über die Autoren
+
+----
+
+Text: 
+
+----
+
+Headline: Über die Autoren
+
+----
+
+Authors-list:
+
+-
+  name: 'Vincent Van Gogh'
+  role: 'Experte für Erneuerbare Energien'
+  bio: 'Hier steht ein kleiner Text über den Autoren. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+  email: autor@beispiel.de
+  image:
+    - 'file://2gtydupt57icoumv'
+
+----
+
+Uuid: akmx70sttitth1ad
+
+----
+
+Lock: 7Uj1CFrf
