@@ -1,0 +1,21 @@
+Title: Über die Autoren
+
+----
+
+Headline: Die Autoren
+
+----
+
+Authors-list:
+
+-
+  name: 'Vincent Van Gogh'
+  role: 'Experte für Sonnenblumen'
+  bio: 'Vincent van Gogh (1853–1890) war ein einflussreicher niederländischer Maler des Post-Impressionismus, der in nur zehn Jahren über 2000 Kunstwerke (u.a. „Sonnenblumen“) schuf. Nach gescheiterten Versuchen als Kunsthändler und Prediger begann er erst mit 27 Jahren zu malen. Trotz psychischer Probleme und Armut schuf er farbintensive Bilder, die ihn postum weltberühmt machten'
+  email: autor@email.de
+  image:
+    - 'file://9l8nbdwwvb1uubp9'
+
+----
+
+Uuid: toyoesabdvttcuwu

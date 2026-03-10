@@ -1,0 +1,121 @@
+/* --- AUTOREN SEITE: LINKED TO INDEX.CSS --- */
+
+.authors-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  /* Nutzt die globale Font-Definition */
+  font-family: var(--font-family-sans);
+}
+
+/* Die massive Überschrift (60px, UntitledSans Bold) */
+.section-header h1 {
+  font-family: var(--font-family-sans) !important;
+  font-size: 55px !important;
+  line-height: 54.7px !important;
+  letter-spacing: -1px !important;
+  font-weight: 700 !important; /* Greift auf UntitledSans-Bold zu */
+  text-transform: uppercase;
+  color: #333333;
+  
+  /* Pinker Balken links */
+  border-left: 20px solid #e6cfe6; 
+  padding-left: 25px;
+  margin-bottom: 80px;
+}
+
+.authors-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+/* Die Karte mit dem pinken Schatten und Animation */
+.author-card {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  background: var(--color-background);
+  border: 3px solid var(--color-black);
+  box-shadow: 25px 25px 0px #e6cfe6; /* Pinker Schatten */
+  
+  /* Animation */
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+              box-shadow 0.2s ease;
+  position: relative;
+}
+
+.author-card:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: 35px 35px 0px #e6cfe6;
+}
+
+.author-image {
+  border-right: 3px solid var(--color-black);
+}
+
+.author-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.author-details {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Autorenname (UntitledSans Bold) */
+.author-details h2 {
+  font-family: var(--font-family-sans) !important;
+  font-size: 48px;
+  font-weight: 700 !important;
+  line-height: 0.9;
+  letter-spacing: -1px;
+  margin-bottom: 15px;
+  color: var(--color-black);
+}
+
+.role-tag {
+  font-family: var(--font-family-sans);
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: 6px 15px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 500; /* UntitledSans-Medium */
+  margin-bottom: 25px;
+  display: inline-block;
+  align-self: flex-start;
+}
+
+.bio {
+  font-family: var(--font-family-sans);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--color-black);
+}
+
+.author-footer {
+  border-top: 1px dashed var(--color-grey);
+  padding-top: 25px;
+  margin-top: 10px;
+}
+
+.author-email {
+  font-family: var(--font-family-sans);
+  text-decoration: none;
+  color: #1a5a7a;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Mobile Fix */
+@media (max-width: 900px) {
+  .author-card { grid-template-columns: 1fr; }
+  .section-header h1 { font-size: 40px; }
+}

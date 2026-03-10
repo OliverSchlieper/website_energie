@@ -1,0 +1,27 @@
+title: Autoren
+icon: users
+
+fields:
+  headline:
+    label: Große Überschrift
+    type: text
+  authors_list:
+    label: Autoren Liste
+    type: structure
+    fields:
+      name:
+        label: Name
+        type: text
+      role:
+        label: Rolle
+        type: text
+      bio:
+        label: Kurzbiografie
+        type: textarea
+      email:
+        label: E-Mail
+        type: text
+      image:
+        label: Foto
+        type: files
+        max: 1
