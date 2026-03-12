@@ -35,9 +35,12 @@
         <img src="<?= url('assets/icons/HM_Logo_rot_cube_RGB.svg') ?>" 
         alt="<?= $site->title()->esc() ?>" />
       </a>
+      <button class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <nav class="menu">
-        <button>☰</button>
-
         <ul>
           <?php foreach ($site->children()->listed() as $item): ?>
             <li>
@@ -53,13 +56,14 @@
   </header>
 
   <script>
-    const menuButton = document.querySelector('.menu button');
+    const menuButton = document.querySelector(".menu-toggle");
     const menuList = document.querySelector('.menu ul');
 
     menuButton.addEventListener('click', () => {
         menuList.classList.toggle('sichtbar');
-        menuButton.classList.toggle('gedreht'); // optional rotation effect
+        menuButton.classList.toggle('active'); 
     });
+
   </script>
 
   <main class="main">

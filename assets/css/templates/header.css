@@ -16,7 +16,7 @@
     top: 0;
     font-size: 130%;
     background: white;
-    box-shadow: 0px 3px 8px rgba(0,0,0,0.16);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.16);
 }
 
 .header_container {
@@ -40,7 +40,7 @@
     display: block;
 }
 
-button {
+/*button {
   border: none;
   padding: 4px 8px 4px 20px;
   background-color: white;
@@ -51,11 +51,33 @@ button {
   right: 0;
   display: none;
 }
+*/
+.menu-toggle {
+    border: none;
+    background: white;
+    width: 40px;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none;
+}
+
+.menu-toggle span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: black;
+    margin: 5px 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
 .menu {
     display: flex;
     align-items: center;
 }
+
 .menu ul {
     list-style: none;
     margin: 0;
@@ -64,6 +86,7 @@ button {
     display: flex;
     gap: 4vw;
 }
+
 .menu li {
     display: flex;
     align-items: center;
@@ -96,10 +119,13 @@ button {
 
 @media (max-width: 768px) {
     :root {
-        --inhaltPadding: 0 4px; /* reduce padding on small screens */
-        --inhaltBreite: 100%;    /* make the container wider, closer to edges */
+        --inhaltPadding: 0 4px;
+        /* reduce padding on small screens */
+        --inhaltBreite: 100%;
+        /* make the container wider, closer to edges */
     }
-  /* Show the hamburger button */
+
+    /* 
   .menu button {
       display: block;
       transition: all 0.5s;
@@ -109,44 +135,61 @@ button {
       transform: rotate(-90deg);
       transform-origin: center;
   }
+  */
+    .menu-toggle {
+        display: block;
+    }
 
-  /* Stack logo + menu vertically if needed */
-  .header_container {
+    .menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* Stack logo + menu vertically if needed */
+    .header_container {
         flex-direction: column;
         align-items: flex-start;
         margin: 0 auto;
-  }
+    }
 
-  /* Menu list vertical and hidden by default */
-  .menu ul {
-      flex-direction: column;
-      gap: 0;
-      margin: 1rem 0 0 0;
+    /* Menu list vertical and hidden by default */
+    .menu ul {
+        flex-direction: column;
+        gap: 0;
+        margin: 1rem 0 0 0;
 
-      width: 100%;
-      background-color: white;
-      box-shadow: 0 5px 3px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 5px 3px rgba(0, 0, 0, 0.3);
 
-      position: absolute;
-      left: 0;
-      top: 60px;
+        position: absolute;
+        left: 0;
+        top: 60px;
 
-      transition: all 0.5s;
-      transform: translateY(-100vh); /* hidden by default */
-  }
+        transition: all 0.5s;
+        transform: translateY(-100vh);
+        /* hidden by default */
+    }
 
-  /* Show menu when visible */
-  .menu ul.sichtbar {
-      transform: translateY(0);
-  }
+    /* Show menu when visible */
+    .menu ul.sichtbar {
+        transform: translateY(0);
+    }
 
-  /* Menu items */
-  .menu li {
-      border-top: 1px solid rgba(0, 0, 0, 0.3);
-      padding: 24px 8px;
-  }
+    /* Menu items */
+    .menu li {
+        border-top: 1px solid rgba(0, 0, 0, 0.3);
+        padding: 24px 8px;
+    }
 
-  .menu li:first-of-type {
-      border-top: none;
-  }
+    .menu li:first-of-type {
+        border-top: none;
+    }
 }
