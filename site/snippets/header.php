@@ -1,31 +1,10 @@
-<?php
-/*
-  Snippets are a great way to store code snippets for reuse
-  or to keep your templates clean.
-
-  This header snippet is reused in all templates.
-  It fetches information from the `site.txt` content file
-  and contains the site navigation.
-
-  More about snippets:
-  https://getkirby.com/docs/guide/templates/snippets
-*/
-?>
 <!DOCTYPE html>
 <html lang="de">
 <head>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-
-  <?php
-  /*
-    In the title tag we show the title of our
-    site and the title of the current page
-  */
-  ?>
   <title><?= $site->title()->esc() ?> | <?= $page->title()->esc() ?></title>
-
   <?php
   /*
     Stylesheets can be included using the `css()` helper.
@@ -36,7 +15,8 @@
   <?= css([
     'assets/css/prism.css',
     'assets/css/lightbox.css',
-    'assets/css/index.css', // Hier stecken die UntitledSans @font-face Regeln drin
+    'assets/css/index.css', // Hier sind die UntitledSans @font-face Regeln drin
+    'assets/css/templates/header.css',
     'assets/css/templates/' . $page->template() . '.css' // Lädt automatisch authors.css
   ]) ?>
 
@@ -49,39 +29,37 @@
   ?>
   <link rel="shortcut icon" type="image/x-icon" href="<?= url('favicon.ico') ?>">
 </head>
-<body>
-
   <header class="header">
-    <?php
-    /*
-      We use `$site->url()` to create a link back to the homepage
-      for the logo and `$site->title()` as a temporary logo. You
-      probably want to replace this with an SVG.
-    */
-    ?>
-    <a class="logo" href="<?= $site->url() ?>">
-      <img src="<?= url('assets/icons/HM_Logo_rot_cube_RGB.svg') ?>" 
-       alt="<?= $site->title()->esc() ?>" />
-    </a>
+    <div class="header_container">
+      <a class="logo" href="<?= $site->url() ?>">
+        <img src="<?= url('assets/icons/HM_Logo_rot_cube_RGB.svg') ?>" 
+        alt="<?= $site->title()->esc() ?>" />
+      </a>
+      <nav class="menu">
+        <button>☰</button>
 
-    <nav class="menu">
-      <?php
-      /*
-        In the menu, we only fetch listed pages,
-        i.e. the pages that have a prepended number
-        in their foldername.
-
-        We do not want to display links to unlisted
-        `error`, `home`, or `sandbox` pages.
-
-        More about page status:
-        https://getkirby.com/docs/reference/panel/blueprints/page#statuses
-      */
-      ?>
-      <?php foreach ($site->children()->listed() as $item): ?>
-      <a <?php e($item->isOpen(), 'aria-current="page"') ?> href="<?= $item->url() ?>"><?= $item->title()->esc() ?></a>
-      <?php endforeach ?>
-    </nav>
+        <ul>
+          <?php foreach ($site->children()->listed() as $item): ?>
+            <li>
+              <a class="<?= $item->isOpen() ? 'current' : '' ?>"
+                href="<?= $item->url() ?>">
+                <?= $item->title()->esc() ?>
+              </a>
+            </li>
+          <?php endforeach ?>
+        </ul>
+      </nav>
+    </div>
   </header>
+
+  <script>
+    const menuButton = document.querySelector('.menu button');
+    const menuList = document.querySelector('.menu ul');
+
+    menuButton.addEventListener('click', () => {
+        menuList.classList.toggle('sichtbar');
+        menuButton.classList.toggle('gedreht'); // optional rotation effect
+    });
+  </script>
 
   <main class="main">

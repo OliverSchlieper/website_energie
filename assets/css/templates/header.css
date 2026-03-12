@@ -1,0 +1,152 @@
+/* ================= Variablen ================== */
+
+:root {
+    /* gilt für header>div, main, footer>div! */
+    --inhaltBreite: clamp(220px, 80%, 1420px);
+    --inhaltPadding: 0 8px;
+    --aktivOderHoverLinkFarbe: #3e45d9;
+}
+
+
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    font-size: 130%;
+    background: white;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.16);
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: var(--inhaltPadding);
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    width: var(--inhaltBreite);
+
+    /* zum Positionieren des Buttons "≡" wichtig! */
+    position: relative;
+
+}
+
+.logo img {
+    height: 48px;
+    width: auto;
+    display: block;
+}
+
+button {
+  border: none;
+  padding: 4px 8px 4px 20px;
+  background-color: white;
+  font-size: 200%;
+  font-weight: 100;
+  position: absolute;
+  top: 4px;
+  right: 0;
+  display: none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    gap: 4vw;
+}
+.menu li {
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+
+/* ============ Links ========== */
+.menu a:link,
+.menu a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu a:hover {
+    color: var(--aktivOderHoverLinkFarbe);
+}
+
+.menu a.current {
+    color: var(--aktivOderHoverLinkFarbe);
+}
+
+
+/* ============ small screens ========== */
+
+@media (max-width: 768px) {
+    :root {
+        --inhaltPadding: 0 4px; /* reduce padding on small screens */
+        --inhaltBreite: 100%;    /* make the container wider, closer to edges */
+    }
+  /* Show the hamburger button */
+  .menu button {
+      display: block;
+      transition: all 0.5s;
+  }
+
+  .menu button.gedreht {
+      transform: rotate(-90deg);
+      transform-origin: center;
+  }
+
+  /* Stack logo + menu vertically if needed */
+  .header_container {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 auto;
+  }
+
+  /* Menu list vertical and hidden by default */
+  .menu ul {
+      flex-direction: column;
+      gap: 0;
+      margin: 1rem 0 0 0;
+
+      width: 100%;
+      background-color: white;
+      box-shadow: 0 5px 3px rgba(0, 0, 0, 0.3);
+
+      position: absolute;
+      left: 0;
+      top: 60px;
+
+      transition: all 0.5s;
+      transform: translateY(-100vh); /* hidden by default */
+  }
+
+  /* Show menu when visible */
+  .menu ul.sichtbar {
+      transform: translateY(0);
+  }
+
+  /* Menu items */
+  .menu li {
+      border-top: 1px solid rgba(0, 0, 0, 0.3);
+      padding: 24px 8px;
+  }
+
+  .menu li:first-of-type {
+      border-top: none;
+  }
+}
