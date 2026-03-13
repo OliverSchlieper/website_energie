@@ -193,6 +193,10 @@ small {
   color: var(--color-text-grey);
 }
 
+main {
+    padding-top: 100px;
+}
+
 .container {
   width: var(--container-width);
   padding: var(--container-padding);

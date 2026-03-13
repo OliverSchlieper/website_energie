@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
-
-<article class="project project-video">
+<main>
+<article class="container">
 
   <h1><?= $page->title() ?></h1>
 
@@ -23,3 +23,4 @@
   </div>
 
 </article>
+</main>
