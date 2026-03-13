@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Spotlight mit modernem Audio-Player und SVG-Buttons</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .background-img, .mask-img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .mask {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      mask-image: radial-gradient(circle 100px at 50% 50%, transparent 0%, black 100%);
+      -webkit-mask-image: radial-gradient(circle 100px at 50% 50%, transparent 0%, black 100%);
+      pointer-events: none;
+    }
+
+    .audio-player {
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0);
+      padding: 15px 20px;
+      border-radius: 15px;
+      color: #eadb89;     
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0);
+    }
+
+    .controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 10px;
+    }
+
+    .controls button {
+      background: #eadb89;  
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      transition: background 0.2s, transform 0.1s;
+      outline: none;
+      box-shadow: none;
+    }
+
+    .controls button:hover {
+      background: #72572d;     
+    }
+
+    .controls button:active {
+      transform: scale(0.95);
+    }
+
+    .controls button:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    .progress-container {
+      background: #9f9f9f;      
+      height: 6px;
+      border-radius: 3px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .progress {
+      background: #712136;
+      height: 6px;
+      width: 0%;
+      border-radius: 3px;
+    }
+
+    .time {
+      font-size: 12px;
+      margin-top: 5px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+   
+    .intro-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 10;
+      transition: transform 1s ease, opacity 1s ease;
+      cursor: pointer;
+    }
+
+    .intro-image.hide {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+   
+    <img src="H%C3%A4nde.png" alt="Intro" class="intro-image" id="intro-image" />
+
+    
+    <img src="Aktenzimmer mit Beschriftnung.png" class="background-img" alt="Hintergrund" />
+
+   
+    <div class="mask">
+      <img src="Aktenzimmer ohne Beschriftung.png" class="mask-img" alt="Maske" />
+    </div>
+
+    
+    <div class="audio-player">
+      <div class="controls">
+        <button id="play" aria-label="Play">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </button>
+        <button id="pause" aria-label="Pause">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="5" width="4" height="14" />
+            <rect x="14" y="5" width="4" height="14" />
+          </svg>
+        </button>
+        <button id="stop" aria-label="Stop">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="6" width="12" height="12" />
+          </svg>
+        </button>
+      </div>
+      <div class="progress-container" id="progress-container">
+        <div class="progress" id="progress"></div>
+      </div>
+      <div class="time">
+        <span id="current-time">0:00</span>
+        <span id="duration">0:00</span>
+      </div>
+      <audio id="audio" src="Kupka_Sabrina_Konrad und das Dokument A 38.mp3"></audio>
+    </div>
+  </div>
+
+  <script>
+    const mask = document.querySelector('.mask');
+    document.addEventListener('mousemove', (e) => {
+      const x = e.clientX;
+      const y = e.clientY;
+      mask.style.maskImage = `radial-gradient(circle 100px at ${x}px ${y}px, transparent 0%, black 100%)`;
+      mask.style.webkitMaskImage = `radial-gradient(circle 100px at ${x}px ${y}px, transparent 0%, black 100%)`;
+    });
+
+    const audio = document.getElementById('audio');
+    const playBtn = document.getElementById('play');
+    const pauseBtn = document.getElementById('pause');
+    const stopBtn = document.getElementById('stop');
+    const progress = document.getElementById('progress');
+    const progressContainer = document.getElementById('progress-container');
+    const currentTimeEl = document.getElementById('current-time');
+    const durationEl = document.getElementById('duration');
+
+    playBtn.onclick = () => audio.play();
+    pauseBtn.onclick = () => audio.pause();
+    stopBtn.onclick = () => {
+      audio.pause();
+      audio.currentTime = 0;
+    };
+
+    
+    audio.addEventListener('timeupdate', () => {
+      const { currentTime, duration } = audio;
+      const percent = (currentTime / duration) * 100;
+      progress.style.width = percent + '%';
+
+      currentTimeEl.textContent = formatTime(currentTime);
+      durationEl.textContent = formatTime(duration);
+    });
+
+    
+    progressContainer.addEventListener('click', (e) => {
+      const width = progressContainer.clientWidth;
+      const clickX = e.offsetX;
+      const duration = audio.duration;
+
+      audio.currentTime = (clickX / width) * duration;
+    });
+
+    function formatTime(time) {
+      const minutes = Math.floor(time / 60) || 0;
+      const seconds = Math.floor(time % 60) || 0;
+      return `${minutes}:${seconds.toString().padStart(2, '0')}`;
+    }
+
+
+    const introImage = document.getElementById('intro-image');
+    introImage.addEventListener('click', () => {
+      introImage.classList.add('hide');
+
+      
+      setTimeout(() => {
+        introImage.remove();
+      }, 1000); 
+    });
+  </script>
+</body>
+</html>
