@@ -1,12 +1,16 @@
 <?php snippet('header') ?>
-<main>
+
+<div class="title-bar">
+  <div class="container">
+    <h1><?= $page->title() ?></h1>
+
+    <?php if ($page->author()->isNotEmpty()): ?>
+      <p class="project-author">Von <?= $page->author() ?></p>
+    <?php endif ?>
+  </div>
+</div>
+
 <article class="container">
-
-  <h1><?= $page->title() ?></h1>
-
-  <?php if ($page->author()->isNotEmpty()): ?>
-    <p class="project-author">Von <?= $page->author() ?></p>
-  <?php endif ?>
 
   <?php if ($page->youtube()->isNotEmpty()): ?>
   <div class="video">
@@ -23,4 +27,3 @@
   </div>
 
 </article>
-</main>

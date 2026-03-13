@@ -1,9 +1,29 @@
+.title-bar {
+  width: 100%;
+  background: var(--color-code-pink); /* deine Farbe */
+  padding: 20rem 0 0.5rem 0; /* oben viel Platz, unten wenig */
+  display: flex;
+  align-items: flex-end; /* Inhalt nach unten schieben */
+}
+
+.title-bar h1 {
+  max-width: min(66%, 20ch);
+    line-height: 1.1;
+  margin: 0;
+  color: var(--color-black);
+}
+
+.project-author {
+  color: var(--color-black);
+  opacity: 0.9;
+}
 
 .video {
+    margin-top: var(--space-l);
     position: relative;
-    width: 100%;
+    width:100%;
     padding-bottom: 56.25%;
-    height: 0;
+
 }
 
 .video iframe {

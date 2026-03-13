@@ -94,24 +94,20 @@
 
 :root {
   --padding: 1.5rem;
-  --color-black: #000;
+  --color-black: #404644;
   --color-white: #fff;
   --hm-red: #FC5555;
-  --color-grey: #777;
-  --color-light: #efefef;
   --color-text: var(--color-black);
-  --color-text-grey: var(--color-grey);
   --color-background: var(--color-white);
-  --color-code-light-grey:  #cacbd1;
-  --color-code-comment:     #a9aaad;
-  --color-code-white:       #c5c9c6;
-  --color-code-red:         #d16464;
-  --color-code-orange:      #de935f;
-  --color-code-yellow:      #f0c674;
-  --color-code-green:       #a7bd68;
-  --color-code-aqua:        #8abeb7;
-  --color-code-blue:        #7e9abf;
-  --color-code-purple:      #b294bb;
+  --color-code-grey:        #C7CDD1;
+  --color-code-dark-grey:   #9BA1A4;
+  --color-code-light-grey:  #E4E8EB;
+  --color-code-darkred:     #8C6270;
+  --color-code-red:         #E26F6A;
+  --color-code-pink:        #DBBFCE;
+  --color-code-purple:      #817BB7;
+  --color-code-green:       #54896D;
+  --color-code-yellow:      #D7D7AE;
   --font-family-sans: 'UntitledSans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-mono: 'UntitledSerif', "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 
@@ -135,6 +131,7 @@ body {
   color: var(--color-text);
   background: var(--color-background);
   font-weight: 400;
+  margin: 0;
 }
 
 body {
@@ -143,22 +140,32 @@ body {
 }
 
 h1 {
-  font-size: 250%;
-  line-height: 1.2;
-  margin-bottom: 2rem;
+  font-size: clamp(2.2rem, 4vw, 3.75rem);
+  line-height: 1.15;
+  margin-bottom: var(--space-m);
   font-weight: 400;
 }
 
 h2 {
-    font-size: 130%;
-    line-height: 1.2;
-    margin: 1.8rem 0;
+  font-size: clamp(1.8rem, 3vw, 2.75rem);
+  line-height: 1.2;
+  margin-bottom: var(--space-m);
 }
 
 h3 {
-  font-size: 110%;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  line-height: 1.3;
+  margin-bottom: var(--space-s);
 }
 
+p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: var(--space-m);
+}
+p:last-child {
+  margin-bottom: 0;
+}
 
 img {
   width: 100%;
