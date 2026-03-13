@@ -17,7 +17,7 @@
     'assets/css/lightbox.css',
     'assets/css/index.css', // Hier sind die UntitledSans @font-face Regeln drin
     'assets/css/templates/header.css',
-    'assets/css/templates/' . $page->template() . '.css' // Lädt automatisch authors.css
+    'assets/css/templates/' . $page->template() . '.css' 
   ]) ?>
 
   <?php
@@ -30,7 +30,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="<?= url('favicon.ico') ?>">
 </head>
   <header class="header">
-    <div class="header_container">
+    <div class="header_container container">
       <a class="logo" href="<?= $site->url() ?>">
         <img src="<?= url('assets/icons/HM_Logo_rot_cube_RGB.svg') ?>" 
         alt="<?= $site->title()->esc() ?>" />

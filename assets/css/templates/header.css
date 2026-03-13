@@ -1,8 +1,7 @@
 /* ================= Variablen ================== */
 
 :root {
-    --inhaltBreite:  clamp(220px, 85%, 1460px);
-    --inhaltPadding: 0 8px;
+
     --aktivOderHoverLinkFarbe: #3e45d9;
 }
 
@@ -22,13 +21,9 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    padding: var(--inhaltPadding);
     padding-top: 12px;
     padding-bottom: 12px;
-
-    width: var(--inhaltBreite);
-
-    /* zum Positionieren des Buttons "≡" wichtig! */
+    align-items: center;    
     position: relative;
 
 }
@@ -118,23 +113,12 @@
 
 @media (max-width: 768px) {
     :root {
-        --inhaltPadding: 0 4px;
+        --container-padding: 0 4px;
         /* reduce padding on small screens */
-        --inhaltBreite: 100%;
+        --container-width: 100%;
         /* make the container wider, closer to edges */
     }
 
-    /* 
-  .menu button {
-      display: block;
-      transition: all 0.5s;
-  }
-
-  .menu button.gedreht {
-      transform: rotate(-90deg);
-      transform-origin: center;
-  }
-  */
     .menu-toggle {
         display: block;
     }
