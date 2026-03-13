@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+  />
+  <title>Quellen – Wer kann Energie sparen?</title>
+
+  <script>
+    document.documentElement.classList.add("app-is-loading");
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="quellen.css" />
+</head>
+<body class="sources-page">
+  <svg id="global-print-filter-svg" aria-hidden="true">
+    <defs>
+      <filter id="printOffsetFilter" x="-10%" y="-10%" width="120%" height="120%">
+        <feTurbulence
+          type="fractalNoise"
+          baseFrequency="0.9"
+          numOctaves="0.5"
+          seed="7"
+          result="dispNoise"
+        />
+        <feDisplacementMap
+          in="SourceGraphic"
+          in2="dispNoise"
+          scale="0.7"
+          xChannelSelector="R"
+          yChannelSelector="G"
+          result="displacedGraphic"
+        />
+        <feTurbulence
+          type="fractalNoise"
+          baseFrequency="0.8"
+          numOctaves="3"
+          seed="11"
+          stitchTiles="stitch"
+          result="grainNoise"
+        />
+        <feColorMatrix
+          in="grainNoise"
+          type="matrix"
+          values="1.4 0 0 0 -0.2  0 1.4 0 0 -0.2  0 0 1.4 0 -0.2  0 0 0 1 0"
+          result="grainContrast"
+        />
+        <feComposite
+          in="grainContrast"
+          in2="SourceAlpha"
+          operator="in"
+          result="grainInsideShape"
+        />
+        <feComponentTransfer in="grainInsideShape" result="grainSoft">
+          <feFuncA type="linear" slope="0.78" />
+        </feComponentTransfer>
+        <feBlend in="displacedGraphic" in2="grainSoft" mode="multiply" />
+      </filter>
+    </defs>
+  </svg>
+
+  <div id="app">
+    <header id="top-ui">
+      <button id="reloadProject" type="button">Wer kann <i>Energie</i> sparen?</button>
+      <a id="otherProjectsLink" href="projekte.html">Zu den anderen Projekten</a>
+    </header>
+
+    <main id="sourcesScroll" aria-label="Quellen Inhalt">
+      <div id="sourcesWorld">
+        <div id="paper-background" aria-hidden="true"></div>
+
+        <section class="sources-shell">
+          <div class="sources-eyebrow">Projektinformationen</div>
+          <h1 class="sources-title">Quellen</h1>
+
+          <ul class="sources-list">
+            <li>
+              Oswald, Y., Owen, A. und Steinberger, J. K. (2020).
+              <em>Large inequality in international and intranational energy footprints between income groups and across consumption categories.</em>
+              Nature Energy, 5, 231–239. ISSN 2058-7546.
+            </li>
+
+            <li>
+              <em>A multi-model assessment of inequality and climate change</em> (Fig. 2 Map).
+            </li>
+
+            <li>
+              Schöngart et al. (2025),
+              <em>High-income groups disproportionately contribute to climate extremes worldwide.</em>
+              Nature Climate Change. (Fig. 2, Fig. 4)
+            </li>
+
+            <li>
+              Chakravarty, S. et al.
+              <em>Sharing global CO₂ emission reductions among one billion high emitters.</em>
+              Proc. Natl. Acad. Sci. U. S. A. 106, 1–5 (2009).
+            </li>
+
+            <li>
+              Teixidó-Figueras, J. et al. (2016).
+              <em>International inequality of environmental pressures: Decomposition and comparative analysis.</em>
+              Ecol. Indic. 62, 163–173.
+            </li>
+
+            <li>
+              Creutzig, F. et al. (2018).
+              <em>Towards demand-side solutions for mitigating climate change.</em>
+              Nat. Clim. Chang. 8, 268–271.
+            </li>
+
+            <li>
+              Interviewtranskripte (Zeitstempel wie im Skript): Harald Lesch &amp; Christian Holler; Lukas Scholle.
+            </li>
+
+            <li>
+              Umweltbundesamt – Treibhausgasminderungsziele Deutschlands (2045):<br>
+              <a
+                href="https://www.umweltbundesamt.de/daten/klima/treibhausgasminderungsziele-deutschlands#internationale-vereinbarungen-weisen-den-weg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                umweltbundesamt.de/daten/klima/treibhausgasminderungsziele-deutschlands
+              </a>
+            </li>
+
+            <li>
+              Holzmann &amp; Wolf (2023), Bertelsmann Stiftung:
+              Sara Holzmann und Dr. Ingo Wolf,
+              <em>Klimapolitik und soziale Gerechtigkeit – Wie die deutsche Bevölkerung Zielkonflikte in der Transformation wahrnimmt.</em>
+            </li>
+
+            <li>
+              Bach &amp; Knautz (2022), DIW Wochenbericht 17/2022:<br>
+              <a
+                href="https://www.diw.de/de/diw_01.c.840066.de/hohe_energiepreise__arme_haushalte_trotz_entlastungspaketen_am_staerksten_belastet.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                DIW – Hohe Energiepreise: arme Haushalte trotz Entlastungspaketen am stärksten belastet
+              </a>
+            </li>
+
+            <li>
+              Deutschlandfunk: <em>„Sind reiche Menschen schuld am Klimawandel?“</em><br>
+              <a
+                href="https://www.deutschlandfunk.de/klimawandel-reichtum-vermoegen-co2-fussabdruck-ausstoss-reiche-100.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                deutschlandfunk.de
+              </a>
+            </li>
+
+            <li>
+              Guardian / Oxfam (Richest 1% vs Poorest 66%):<br>
+              <a
+                href="https://www.theguardian.com/environment/2023/nov/20/richest-1-account-for-more-carbon-emissions-than-poorest-66-report-says"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                theguardian.com
+              </a>
+            </li>
+
+            <li>
+              Attac Energie-Grundanspruch:<br>
+              <a
+                href="https://www.ots.at/presseaussendung/OTS_20220905_OTS0058/attac-zu-strompreisbremse-unsozial-und-klimaschaedlich"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ots.at
+              </a>
+            </li>
+
+            <li>
+              Übergewinnsteuer 30–100 Mrd. € (Netzwerk Steuergerechtigkeit / t-online / RosaLux):<br>
+              <a
+                href="https://www.netzwerk-steuergerechtigkeit.de/neue-studie-zu-uebergewinnsteuer-fuer-energieunternehmen/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                netzwerk-steuergerechtigkeit.de
+              </a>
+            </li>
+
+            <li>
+              Pothen, F. und Tovar Reaños, M. A.
+              <em>The Distribution of Material Footprints in Germany.</em>
+              Discussion Paper No. 18-022. (Faktor 3: 49,29 t vs 16,15 t)
+            </li>
+
+            <li>
+              Medienservice Klima &amp; Gesundheit (10 t vs 5,6 t):<br>
+              <a
+                href="https://medienservice-klima-gesundheit.de/dossiers/gerechtigkeit/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                medienservice-klima-gesundheit.de
+              </a>
+            </li>
+
+            <li>
+              Grafik, Designed by pikisuperstar / Freepik<br>
+              <a href="http://www.freepik.com" target="_blank" rel="noopener noreferrer">
+                Designed by pikisuperstar / Freepik
+              </a>
+            </li>
+
+            <li>
+              Grafik, Designed by rawpixel / Freepik<br>
+              <a href="http://www.freepik.com" target="_blank" rel="noopener noreferrer">
+                Designed by rawpixel / Freepik
+              </a>
+            </li>
+
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <div id="bottom-ui">
+      <a class="side-link side-link-left" href="about.html">About</a>
+      <div class="bottom-center-spacer" aria-hidden="true"></div>
+      <a class="side-link side-link-right is-active" href="quellen.html" aria-current="page">Quellen</a>
+    </div>
+  </div>
+
+  <script src="quellen.js"></script>
+</body>
+</html>

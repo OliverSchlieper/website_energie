@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+  />
+  <title>About – Wer kann Energie sparen?</title>
+
+  <script>
+    document.documentElement.classList.add("app-is-loading");
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="about.css" />
+</head>
+<body class="about-page">
+  <svg id="global-print-filter-svg" aria-hidden="true">
+    <defs>
+      <filter id="printOffsetFilter" x="-10%" y="-10%" width="120%" height="120%">
+        <feTurbulence
+          type="fractalNoise"
+          baseFrequency="0.9"
+          numOctaves="0.5"
+          seed="7"
+          result="dispNoise"
+        />
+        <feDisplacementMap
+          in="SourceGraphic"
+          in2="dispNoise"
+          scale="0.7"
+          xChannelSelector="R"
+          yChannelSelector="G"
+          result="displacedGraphic"
+        />
+        <feTurbulence
+          type="fractalNoise"
+          baseFrequency="0.8"
+          numOctaves="3"
+          seed="11"
+          stitchTiles="stitch"
+          result="grainNoise"
+        />
+        <feColorMatrix
+          in="grainNoise"
+          type="matrix"
+          values="1.4 0 0 0 -0.2  0 1.4 0 0 -0.2  0 0 1.4 0 -0.2  0 0 0 1 0"
+          result="grainContrast"
+        />
+        <feComposite
+          in="grainContrast"
+          in2="SourceAlpha"
+          operator="in"
+          result="grainInsideShape"
+        />
+        <feComponentTransfer in="grainInsideShape" result="grainSoft">
+          <feFuncA type="linear" slope="0.78" />
+        </feComponentTransfer>
+        <feBlend in="displacedGraphic" in2="grainSoft" mode="multiply" />
+      </filter>
+    </defs>
+  </svg>
+
+  <div id="app">
+    <header id="top-ui">
+      <button id="reloadProject" type="button">Wer kann <i>Energie</i> sparen?</button>
+      <a id="otherProjectsLink" href="projekte.html">Zu den anderen Projekten</a>
+    </header>
+
+    <main id="aboutScroll" aria-label="About Inhalt">
+      <div id="aboutWorld">
+        <div id="paper-background" aria-hidden="true"></div>
+
+        <section class="about-shell">
+          <div class="about-eyebrow">Projektinformationen</div>
+          <h1 class="about-title">About</h1>
+
+            <p class="about-author">
+              <strong>Jakob Giggenbach</strong><br>
+              Fotodesign B.A.<br>
+              Hochschule München – Fakultät 12 (Design)
+          </p>
+          
+          <div class="about-text">
+            <p>
+              <strong>Wer kann wie viel sparen?</strong> ist ein Video über Energieverbrauch,
+              Klimaziele und soziale Ungleichheit. Das Projekt untersucht, wie ungleich
+              Energieverbrauch und Emissionen verteilt sind — und was das für die Frage
+              bedeutet, wer in der Klimatransformation tatsächlich wie viel beitragen kann.
+            </p>
+
+            <p>
+              Im Mittelpunkt stehen die Spannungen zwischen technischem Fortschritt,
+              politischer Gestaltung und sozialer Gerechtigkeit. Dafür verbindet das Video
+              wissenschaftliche Quellen, Interviewausschnitte und visuelle Verdichtung
+              zu einer filmischen Auseinandersetzung mit der Frage, wie Einsparung
+              gesellschaftlich gedacht werden muss.
+            </p>
+          </div>
+
+          <section class="about-thanks">
+            <h2 class="about-subtitle">Dank</h2>
+
+            <p>
+              Besonderer Dank gilt <strong>Sarah Schmidt</strong> für ihre Unterstützung
+              beim Interviewdreh und dafür, dass ich im Rahmen ihres Interviews eigene Fragen
+              stellen und das Material für dieses Projekt nutzen konnte.
+            </p>
+
+            <p>
+              Danke an <strong>Prof. Knut Karge</strong> für die Betreuung des Projekts.
+            </p>
+
+            <p>
+              Außerdem danke ich <strong>Prof. Dr. Harald Lesch</strong>,
+              <strong>Prof. Dr. Christian Holler</strong> und <strong>Lukas Scholle</strong>
+              für ihre Interviewteilnahme und ihre inhaltliche Mitwirkung.
+            </p>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <div id="bottom-ui">
+      <a class="side-link side-link-left is-active" href="about.html" aria-current="page">About</a>
+      <div class="bottom-center-spacer" aria-hidden="true"></div>
+      <a class="side-link side-link-right" href="quellen.html">Quellen</a>
+    </div>
+  </div>
+
+  <script src="about.js"></script>
+</body>
+</html>

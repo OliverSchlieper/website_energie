@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+  />
+  <title>Wer kann Energie sparen?</title>
+
+  <script>
+    document.documentElement.classList.add("app-is-loading");
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- globaler Print-/Grain-/Versatz-Filter -->
+  <svg id="global-print-filter-svg" aria-hidden="true">
+    <defs>
+      <filter id="printOffsetFilter" x="-10%" y="-10%" width="120%" height="120%">
+        <feTurbulence
+          type="fractalNoise"
+          baseFrequency="0.9"
+          numOctaves="0.5"
+          seed="7"
+          result="dispNoise"
+        />
+        <feDisplacementMap
+          in="SourceGraphic"
+          in2="dispNoise"
+          scale="0.7"
+          xChannelSelector="R"
+          yChannelSelector="G"
+          result="displacedGraphic"
+        />
+        <feTurbulence
+          type="fractalNoise"
+          baseFrequency="0.8"
+          numOctaves="3"
+          seed="11"
+          stitchTiles="stitch"
+          result="grainNoise"
+        />
+        <feColorMatrix
+          in="grainNoise"
+          type="matrix"
+          values="1.4 0 0 0 -0.2  0 1.4 0 0 -0.2  0 0 1.4 0 -0.2  0 0 0 1 0"
+          result="grainContrast"
+        />
+        <feComposite
+          in="grainContrast"
+          in2="SourceAlpha"
+          operator="in"
+          result="grainInsideShape"
+        />
+        <feComponentTransfer in="grainInsideShape" result="grainSoft">
+          <feFuncA type="linear" slope="0.78" />
+        </feComponentTransfer>
+        <feBlend in="displacedGraphic" in2="grainSoft" mode="multiply" />
+      </filter>
+    </defs>
+  </svg>
+
+  <div id="app">
+    <div id="viewport">
+      <div id="world">
+        <div id="paper-background"></div>
+
+        <section class="chapter title-chapter active" data-index="0" style="left: 900px; top: 1450px;">
+          <div class="chapter-inner">
+            <h1 class="title-main">Wer kann <i>Energie</i> sparen?</h1>
+
+            <div class="chapter-action-slot">
+              <button class="chapter-dot" type="button" aria-label="Zum ersten Kapitel"></button>
+            </div>
+
+            <p class="title-meta">Energieverbrauch, Klimaziele und soziale Ungleichheit</p>
+          </div>
+        </section>
+
+        <section class="chapter video-chapter" data-index="1" style="left: 2100px; top: 1450px;">
+          <div class="chapter-inner">
+            <div class="chapter-video-frame">
+              <div
+                class="chapter-inline-video youtube-player-host"
+                data-chapter="1"
+                id="yt-player-1"
+              ></div>
+            </div>
+
+            <div class="chapter-action-slot">
+              <button
+                class="chapter-play-button is-hidden"
+                type="button"
+                aria-label="Kapitel 1 abspielen oder pausieren"
+              >
+                <span class="play-icon" aria-hidden="true"></span>
+              </button>
+
+              <button
+                class="chapter-dot is-hidden"
+                type="button"
+                aria-label="Zu Kapitel 2 wechseln"
+              ></button>
+            </div>
+          </div>
+        </section>
+
+        <section class="chapter video-chapter" data-index="2" style="left: 3300px; top: 1450px;">
+          <div class="chapter-inner">
+            <div class="chapter-video-frame">
+              <div
+                class="chapter-inline-video youtube-player-host"
+                data-chapter="2"
+                id="yt-player-2"
+              ></div>
+            </div>
+
+            <div class="chapter-action-slot">
+              <button
+                class="chapter-play-button is-hidden"
+                type="button"
+                aria-label="Kapitel 2 abspielen oder pausieren"
+              >
+                <span class="play-icon" aria-hidden="true"></span>
+              </button>
+
+              <button
+                class="chapter-dot is-hidden"
+                type="button"
+                aria-label="Zu Kapitel 3 wechseln"
+              ></button>
+            </div>
+          </div>
+        </section>
+
+        <section class="chapter video-chapter" data-index="3" style="left: 4500px; top: 1450px;">
+          <div class="chapter-inner">
+            <div class="chapter-video-frame">
+              <div
+                class="chapter-inline-video youtube-player-host"
+                data-chapter="3"
+                id="yt-player-3"
+              ></div>
+            </div>
+
+            <div class="chapter-action-slot">
+              <button
+                class="chapter-play-button is-hidden"
+                type="button"
+                aria-label="Kapitel 3 abspielen oder pausieren"
+              >
+                <span class="play-icon" aria-hidden="true"></span>
+              </button>
+
+              <button
+                class="chapter-dot is-hidden"
+                type="button"
+                aria-label="Zu Kapitel 4 wechseln"
+              ></button>
+            </div>
+          </div>
+        </section>
+
+        <section class="chapter video-chapter" data-index="4" style="left: 5700px; top: 1450px;">
+          <div class="chapter-inner">
+            <div class="chapter-video-frame">
+              <div
+                class="chapter-inline-video youtube-player-host"
+                data-chapter="4"
+                id="yt-player-4"
+              ></div>
+            </div>
+
+            <div class="chapter-action-slot">
+              <button
+                class="chapter-play-button is-hidden"
+                type="button"
+                aria-label="Kapitel 4 abspielen oder pausieren"
+              >
+                <span class="play-icon" aria-hidden="true"></span>
+              </button>
+
+              <button
+                class="chapter-dot is-hidden"
+                type="button"
+                aria-label="Zu Kapitel 5 wechseln"
+              ></button>
+            </div>
+          </div>
+        </section>
+
+        <section class="chapter video-chapter" data-index="5" style="left: 6900px; top: 1450px;">
+          <div class="chapter-inner">
+            <div class="chapter-video-frame">
+              <div
+                class="chapter-inline-video youtube-player-host"
+                data-chapter="5"
+                id="yt-player-5"
+              ></div>
+            </div>
+
+            <div class="chapter-action-slot">
+              <button
+                class="chapter-play-button is-hidden"
+                type="button"
+                aria-label="Kapitel 5 abspielen oder pausieren"
+              >
+                <span class="play-icon" aria-hidden="true"></span>
+              </button>
+
+              <button
+                class="chapter-dot is-hidden"
+                type="button"
+                aria-label="Zum Ende wechseln"
+              ></button>
+            </div>
+          </div>
+        </section>
+
+        <section class="chapter end-chapter" data-index="6" style="left: 8100px; top: 1450px;">
+          <div class="chapter-inner">
+            <div class="chapter-label">Ende</div>
+            <h2>Wir müssen <i>Energie</i> sparen.</h2>
+
+            <div class="chapter-action-slot">
+              <button class="chapter-dot" type="button" aria-label="Zum Ende wechseln"></button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <header id="top-ui">
+      <button id="reloadProject" type="button">Wer kann <i>Energie</i> sparen?</button>
+      <a id="otherProjectsLink" href="projekte.html">Zu den anderen Projekten</a>
+    </header>
+
+    <div id="bottom-ui">
+      <a class="side-link side-link-left" href="about.html">About</a>
+
+      <button
+        id="soundToggle"
+        class="media-mini-btn"
+        type="button"
+        aria-label="Ton stummschalten"
+      >
+        <span class="sound-icon" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+
+      <nav id="chapterNav" aria-label="Kapitel Navigation">
+        <div class="nav-line">
+          <div class="video-progress-track" aria-hidden="true">
+            <div class="video-progress-segment"><div class="video-progress-fill" data-segment="1"></div></div>
+            <div class="video-progress-segment"><div class="video-progress-fill" data-segment="2"></div></div>
+            <div class="video-progress-segment"><div class="video-progress-fill" data-segment="3"></div></div>
+            <div class="video-progress-segment"><div class="video-progress-fill" data-segment="4"></div></div>
+            <div class="video-progress-segment"><div class="video-progress-fill" data-segment="5"></div></div>
+          </div>
+
+          <button class="nav-item active" data-target="1" type="button" aria-label="Kapitel 1">
+            <span class="nav-item-label">1</span>
+          </button>
+          <button class="nav-item" data-target="2" type="button" aria-label="Kapitel 2">
+            <span class="nav-item-label">2</span>
+          </button>
+          <button class="nav-item" data-target="3" type="button" aria-label="Kapitel 3">
+            <span class="nav-item-label">3</span>
+          </button>
+          <button class="nav-item" data-target="4" type="button" aria-label="Kapitel 4">
+            <span class="nav-item-label">4</span>
+          </button>
+          <button class="nav-item" data-target="5" type="button" aria-label="Kapitel 5">
+            <span class="nav-item-label">5</span>
+          </button>
+          <button class="nav-item nav-item-end" data-target="6" type="button" aria-label="Ende">
+            <span class="nav-item-label">Ende</span>
+          </button>
+        </div>
+      </nav>
+
+      <button
+        id="fullscreenToggle"
+        class="media-mini-btn"
+        type="button"
+        aria-label="Fullscreen aktivieren"
+      >
+        <span class="fullscreen-icon" aria-hidden="true">
+          <span class="corner corner-tl"></span>
+          <span class="corner corner-tr"></span>
+          <span class="corner corner-bl"></span>
+          <span class="corner corner-br"></span>
+        </span>
+      </button>
+
+      <a class="side-link side-link-right" href="quellen.html">Quellen</a>
+    </div>
+  </div>
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
