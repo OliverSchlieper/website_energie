@@ -116,10 +116,10 @@
   --font-family-mono: 'UntitledSerif', "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 
   /* layout width */
-  --container-width: clamp(320px, 90%, 1400px);
+  --container-width: clamp(220px, 90%, 1480px);
 
   /* horizontal page padding */
-  --container-padding: 0 8px;
+  --container-padding: 0 16px;
 
   /* vertical spacing system */
   --space-s: 0.5rem;
