@@ -1,6 +1,7 @@
 <?php snippet('header') ?>
 
         <main>
+            <div class="container">
             <h1>Projekte</h1>
 
             <article class="galerie">
@@ -55,6 +56,7 @@
                     </figcaption>
                 </figure>
             </article>
+            </div>
         </main>
 
   
