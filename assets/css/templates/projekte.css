@@ -1,0 +1,85 @@
+/* ============ Grundeinstellungen / Reset ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+img,
+picture,
+canvas,
+video {
+    /* … oder "auto-width", je nach dem, was Ihr braucht */
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    /* damit wird Scrollbalken mit berechnet, 
+    sonst "Wackler" zwischen langen und kurzen Seiten */
+    min-height: 100vh;
+    color: #444;
+    background-color: #fff;
+    /* kommt beim nächsten mal dran */
+    scroll-behavior: smooth;
+    /* automatische Silbentrennung */
+    hyphens: auto;
+}
+
+/* ============ Links ========== */
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: var(--aktivOderHoverLinkFarbe);
+}
+
+a:focus,
+a:active {
+    outline: 1px solid var(--aktivOderHoverLinkFarbe);
+}
+
+/* gerade aktive Seite */
+a.current {
+    color: var(--aktivOderHoverLinkFarbe);
+}
+
+/* ============ main ========== */
+
+main {
+    width: var(--inhaltBreite);
+    padding: var(--inhaltPadding);
+    margin: 100px auto;
+}
+
+.galerie {
+    /* outline: 1px solid green; */
+    display: grid;
+    gap: 60px 12px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+    p + p {
+        text-indent: 1.5rem;
+    }
+
+    .mehrLink {
+        font-size: 120%;
+    }
+
+    .mehrLink:before {
+        content: '→';
+        font-size: 130%;
+        padding-right: 10px;
+    }
+
+    figure {
+        border-right: 1px solid rgba(0, 0, 0, 0.5);
+        padding-right: 12px;
+    }
+}

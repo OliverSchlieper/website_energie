@@ -1,8 +1,7 @@
 /* ================= Variablen ================== */
 
 :root {
-    /* gilt für header>div, main, footer>div! */
-    --inhaltBreite: clamp(220px, 80%, 1420px);
+    --inhaltBreite:  clamp(220px, 85%, 1460px);
     --inhaltPadding: 0 8px;
     --aktivOderHoverLinkFarbe: #3e45d9;
 }
@@ -24,8 +23,8 @@
     justify-content: space-between;
     margin: 0 auto;
     padding: var(--inhaltPadding);
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 
     width: var(--inhaltBreite);
 
@@ -84,7 +83,7 @@
     padding: 0;
 
     display: flex;
-    gap: 4vw;
+    gap: 3vw;
 }
 
 .menu li {

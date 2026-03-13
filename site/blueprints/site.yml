@@ -29,7 +29,7 @@ columns:
         type: pages
         create: default
         templates:
-          - about
           - home
           - default
           - authors
+          - projekte

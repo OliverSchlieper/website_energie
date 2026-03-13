@@ -1,0 +1,20 @@
+title: Video Projekt
+
+fields:
+  author:
+    label: Author
+    type: text
+
+  youtube:
+    label: YouTube Video ID
+    type: text
+
+  description:
+    label: Description
+    type: textarea
+
+  thumbnail:
+    label: Thumbnail image
+    type: files
+    max: 1
+    layout: cards
