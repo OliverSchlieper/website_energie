@@ -16,6 +16,16 @@ video {
     display: block;
 }
 
+.project-thumb {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  margin-bottom: var(--space-m);
+}
+.galerie figure:nth-child(1) .project-thumb { background: var(--color-code-darkred); }
+.galerie figure:nth-child(2) .project-thumb { background: var(--color-code-yellow) }
+.galerie figure:nth-child(3) .project-thumb { background: var(--color-code-green) }
+.galerie figure:nth-child(4) .project-thumb { background: var(--color-code-pink) }
+
 body {
     /* damit wird Scrollbalken mit berechnet, 
     sonst "Wackler" zwischen langen und kurzen Seiten */
@@ -61,7 +71,7 @@ main {
 .galerie {
     /* outline: 1px solid green; */
     display: grid;
-    gap: 60px 12px;
+    gap: 60px 16px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 
     p + p {
@@ -80,6 +90,6 @@ main {
 
     figure {
         border-right: 1px solid rgba(0, 0, 0, 0.5);
-        padding-right: 12px;
+        padding-right: 16px;
     }
 }

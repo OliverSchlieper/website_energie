@@ -6,53 +6,39 @@
 
             <article class="galerie">
                 <figure>
-                    <img src="https://picsum.photos/600/400?random=1" alt="" />
+                    <div class="project-thumb"></div>
                     <figcaption>
-                        <h3>Lorem ipsum dolor sit amet.</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, enim a modi sequi qui dolorem tenetur obcaecati nesciunt accusamus quis?</p>
-                        <p>Voluptatem, deserunt pariatur fuga quod, ipsam iusto ipsum esse rem, nemo vitae neque minima! Vitae repudiandae libero placeat ipsa nostrum!</p>
-                        <p>Veritatis, quae quibusdam. Eligendi quas modi doloremque itaque non, ea hic praesentium incidunt, voluptates laboriosam ipsum, exercitationem ex ratione quos.</p>
-                        <a href="#" class="mehrLink">Lesen</a>
+                        <p>Sabrina Kupka</p>
+                        <h3>Konrad und das Dokument A38 </h3>
+                        <p>Ein verschwundenes Dokument, ein verhinderter Schwertransport eines Rotorblatts für ein Windrad und ein Detektiv mit einer ganz persönlichen Verbindung zum Fall. Als Konrad den Auftrag erhält, das verschwundene Dokument A38 zu suchen, beginnt für ihn die spannende Suche.</p>
+                        <a href="assets/projekte/konrad-und-das-dokument-a38/index.html" class="mehrLink">Mehr erfahren</a>
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="https://picsum.photos/600/400?random=2" alt="" />
+                    <div class="project-thumb"></div>
                     <figcaption>
-                        <h3>Quia illum quam vero sint.</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, cumque ab? Fugiat nesciunt eveniet adipisci magnam est et accusantium optio.</p>
-                        <p>Corporis, eos magnam. Rerum, aspernatur exercitationem ipsa laboriosam laborum quidem tempora veniam ipsam praesentium magni iste asperiores quam suscipit tempore.</p>
-                        <p>Sit eveniet consectetur iste, distinctio voluptate molestias architecto facilis corrupti, quibusdam praesentium similique quo iure officiis, cumque veniam illum delectus?</p>
-                        <a href="#" class="mehrLink">Lesen</a>
+                        <p>Jakob Giggenbach</p>
+                        <h3>Wer kann <span style="font-style: italic;">Energie</span> sparen?</h3>
+                        <p>Wer kann wie viel sparen? ist ein Video über Energieverbrauch, Klimaziele und soziale Ungleichheit. Das Projekt untersucht, wie ungleich Energieverbrauch und Emissionen verteilt sind — und was das für die Frage bedeutet, wer in der Klimatransformation tatsächlich wie viel beitragen kann.</p>
+                        <a href="assets/projekte/energie-sparen/index.html" class="mehrLink">Mehr erfahren</a>
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="https://picsum.photos/600/400?random=3" alt="" />
+                    <div class="project-thumb"></div>
                     <figcaption>
-                        <h3>Perferendis fugit quasi quod deserunt?</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia qui quo tenetur atque eum tempore id exercitationem, neque aliquam earum.</p>
-                        <p>Minima neque delectus, illo nam ducimus animi aspernatur deleniti, voluptates corporis adipisci atque nobis architecto commodi velit quis vel? Consequuntur.</p>
-                        <p>Similique consequuntur repudiandae, cupiditate possimus necessitatibus asperiores, eveniet, accusamus ut adipisci a soluta eum eaque maiores sunt fugit velit pariatur.</p>
-                        <a href="#" class="mehrLink">Lesen</a>
+                        <p>Raphael Kast</p>
+                        <h3>Energie im Alltag</h3>
+                        <p>Energie zu verbrauchen ist für uns alle selbstverständlich. In drei kurzen Video-Porträts richtet sich der Blick auf Menschen, die durch ihren Lebensstil bewusst oder unbewusst Energie sparen. Statt abstrakter Zahlen stehen persönliche Geschichten, Gewohnheiten und Entscheidungen im Mittelpunkt. Die Arbeit zeigt, wie niedrigenergetische Lebensweisen aussehen können.</p>
+                        <a href="#" class="mehrLink">Mehr erfahren</a>
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="https://picsum.photos/600/400?random=4" alt="" />
+                    <div class="project-thumb"></div>
                     <figcaption>
-                        <h3>Totam nisi reprehenderit pariatur exercitationem.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum quod illo cupiditate. Doloremque odio nulla consequatur, minima laboriosam tempora ab.</p>
-                        <p>Maxime, distinctio minima? Fugit natus rerum assumenda perspiciatis repellat, veritatis doloremque. Optio iusto vero quisquam rerum cum quibusdam tempore quas.</p>
-                        <p>Ullam sequi optio quidem nulla consequatur, perspiciatis, dolor mollitia eveniet in laboriosam asperiores explicabo amet error aliquam sint, voluptate quibusdam.</p>
-                        <a href="#" class="mehrLink">Lesen</a>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="https://picsum.photos/600/400?random=5" alt="" />
-                    <figcaption>
-                        <h3>Atque, necessitatibus laudantium. Commodi, ipsam!</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, ratione quos quasi doloremque quas temporibus tempora minus. Ipsum, laborum vero!</p>
-                        <p>Delectus quas voluptatibus culpa officiis voluptatum doloremque quibusdam atque perferendis neque obcaecati ullam, nisi dicta ab iure id commodi! Dolores.</p>
-                        <p>Laboriosam numquam autem debitis error, facilis ipsum, illum eius rerum impedit non atque repellat incidunt dolorum labore nemo optio at.</p>
-                        <a href="#" class="mehrLink">Lesen</a>
+                        <p>Sarah Schmidt</p>
+                        <h3>Zukunfts-Talk Harald Lesch & Christian Holler</h3>
+                        <p>In diesem Video sprechen Harald Lesch & Christian Holler über ihr neues Buch & über Zukunftsthemen, die uns alle betreffen.</p>
+                        <a href="projekte/zukunfts-talk" class="mehrLink">Mehr erfahren</a>
                     </figcaption>
                 </figure>
             </article>
