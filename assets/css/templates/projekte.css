@@ -25,6 +25,7 @@ video {
 .galerie figure:nth-child(2) .project-thumb { background: var(--color-code-yellow) }
 .galerie figure:nth-child(3) .project-thumb { background: var(--color-code-green) }
 .galerie figure:nth-child(4) .project-thumb { background: var(--color-code-pink) }
+.galerie figure:nth-child(5) .project-thumb { background: var(--color-code-purple) }
 
 body {
     /* damit wird Scrollbalken mit berechnet, 

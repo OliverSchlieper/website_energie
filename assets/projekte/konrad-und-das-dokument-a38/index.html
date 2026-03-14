@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
   <title>Spotlight mit modernem Audio-Player und SVG-Buttons</title>
   <style>
@@ -128,6 +129,25 @@
       transform: translateY(100%);
       opacity: 0;
     }
+
+    .back-link {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      color: #eadb89;
+      text-decoration: none;
+      font-size: 28px;
+      font-family: 'Caveat';
+      background: rgba(0,0,0,0.4);
+      padding: 6px 14px;
+      border-radius: 8px;
+      transition: background 0.2s, transform 0.1s;
+    }
+
+    .back-link:hover {
+      background: rgba(0,0,0,0.7);
+      transform: scale(1.05);
+    }
   </style>
 </head>
 <body>
@@ -172,6 +192,7 @@
       </div>
       <audio id="audio" src="Kupka_Sabrina_Konrad und das Dokument A 38.mp3"></audio>
     </div>
+    <a href="/projekte" class="back-link">← Zurück zu den Projekten</a>
   </div>
 
   <script>

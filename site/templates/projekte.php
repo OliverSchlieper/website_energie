@@ -41,6 +41,15 @@
                         <a href="projekte/zukunfts-talk" class="mehrLink">Mehr erfahren</a>
                     </figcaption>
                 </figure>
+                <figure>
+                    <div class="project-thumb"></div>
+                    <figcaption>
+                        <p>Alina Schröder</p>
+                        <h3>Ondra</h3>
+                        <p>Wir sitzen alle im selben Boot. Hier kann Klimawandel und Energiewende spielerisch erfahrbar werden.</p>
+                        <a href="https://my.spline.design/ondraalinaschrder-msa0a6Is4LzZ8mMGQTOR2YYq/" class="mehrLink">Mehr erfahren</a>
+                    </figcaption>
+                </figure>
             </article>
             </div>
         </main>
