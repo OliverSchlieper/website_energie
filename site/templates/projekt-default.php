@@ -10,20 +10,33 @@
   </div>
 </div>
 
-<article class="container">
+<section class="container">
 
-  <?php if ($page->youtube()->isNotEmpty()): ?>
-  <div class="video">
-    <iframe
-      src="https://www.youtube.com/embed/<?= $page->youtube() ?>"
-      frameborder="0"
-      allowfullscreen>
-    </iframe>
-  </div>
-  <?php endif ?>
+  <!-- Intro + Credits -->
+  <div class="content-grid">
 
-  <div class="description">
-    <?= $page->description()->kirbytext() ?>
+    <div class="intro p">
+      <?= $page->intro()->kt() ?>
+    </div>
+
   </div>
 
-</article>
+  <article class="video-grid">
+    <div></div>
+
+    <?php if ($page->youtube()->isNotEmpty()): ?>
+    <div class="video">
+      <iframe
+        src="https://www.youtube.com/embed/<?= $page->youtube() ?>"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <?php endif ?>
+
+  </article>
+
+  </section>
+
+  <?php snippet('footer') ?>
+  </section>

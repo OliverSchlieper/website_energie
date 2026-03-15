@@ -1,7 +1,7 @@
 .title-bar {
   width: 100%;
-  background: var(--color-code-pink); /* deine Farbe */
-  padding: 20rem 0 0.5rem 0; /* oben viel Platz, unten wenig */
+  background: var(--color-code-pink); 
+  padding: 20rem 0 1rem 0; 
   display: flex;
   align-items: flex-end; /* Inhalt nach unten schieben */
   margin-bottom: var(--space-l);
@@ -19,6 +19,34 @@
   opacity: 0.9;
 }
 
+
+/* Grid */
+.content-grid{
+  display:grid;
+  grid-template-columns: 7fr 3fr;
+  gap:4rem;
+  margin-bottom: var(--space-l);
+}
+
+.content-grid .intro p{
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  line-height: 1.35;
+  max-width: 58ch;
+}
+
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 2rem; 
+    align-items: start;
+}
+
+.video-grid:first-of-type {
+  border-top: 1px solid var(--color-black);
+  padding-top: var(--space-l);
+}
+
 .video {
     position: relative;
     width:100%;
@@ -33,3 +61,4 @@
     left: 0;
     top: 0;
 }
+

@@ -9,8 +9,8 @@ fields:
     label: YouTube Video ID
     type: text
 
-  description:
-    label: Description
+  intro:
+    label: Einleitung
     type: textarea
 
   thumbnail:
