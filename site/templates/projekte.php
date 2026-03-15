@@ -37,7 +37,7 @@
                     <figcaption>
                         <p>Sarah Schmidt</p>
                         <h3>Zukunfts-Talk Harald Lesch & Christian Holler</h3>
-                        <p>In diesem Video sprechen Harald Lesch & Christian Holler über ihr neues Buch & über Zukunftsthemen, die uns alle betreffen.</p>
+                        <p>In diesem Video sprechen Harald Lesch und Christian Holler über ihr neues Buch, und außerdem über Zukunftsthemen, die uns alle betreffen.</p>
                         <a href="projekte/zukunfts-talk" class="mehrLink">Mehr erfahren</a>
                     </figcaption>
                 </figure>
