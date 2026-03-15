@@ -4,6 +4,7 @@
   padding: 20rem 0 0.5rem 0; /* oben viel Platz, unten wenig */
   display: flex;
   align-items: flex-end; /* Inhalt nach unten schieben */
+  margin-bottom: var(--space-l);
 }
 
 .title-bar h1 {
@@ -19,7 +20,6 @@
 }
 
 .video {
-    margin-top: var(--space-l);
     position: relative;
     width:100%;
     padding-bottom: 56.25%;

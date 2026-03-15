@@ -25,6 +25,7 @@
   <div class="text">
     <?= $page->text()->kt() ?>
   </div>
+  <p>default</p>
 </article>
 
 <?php snippet('footer') ?>

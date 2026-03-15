@@ -33,3 +33,5 @@ columns:
           - default
           - authors
           - projekte
+          - projekt-raphael
+          - projekt-default

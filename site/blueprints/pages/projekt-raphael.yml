@@ -1,0 +1,39 @@
+title: Energie im Alltag Seite
+
+fields:
+  author:
+    label: Author
+    type: text
+
+  intro:
+    label: Einleitung
+    type: textarea
+
+  credits:
+    label: Credits
+    type: textarea
+
+  portraits:
+    label: Personen
+    type: structure
+    fields:
+
+      name:
+        label: Name
+        type: text
+
+      age:
+        label: Alter
+        type: number
+
+      role:
+        label: Rolle
+        type: text
+
+      text:
+        label: Beschreibung
+        type: textarea
+
+      video:
+        label: YouTube ID
+        type: text

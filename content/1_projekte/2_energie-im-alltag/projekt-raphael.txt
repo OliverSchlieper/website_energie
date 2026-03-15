@@ -1,0 +1,49 @@
+Title: Energie im Alltag
+
+----
+
+Author:Raphael Kast
+
+----
+
+Intro: Energie zu verbrauchen ist für uns alle selbstverständlich. In drei kurzen Video-Porträts richtet sich der Blick auf Menschen, die durch ihren Lebensstil bewusst oder unbewusst Energie sparen. Statt abstrakter Zahlen stehen persönliche Geschichten, Gewohnheiten und Entscheidungen im Mittelpunkt. Die Arbeit zeigt, wie niedrigenergetische Lebensweisen aussehen können.
+
+----
+
+Credits:
+
+Ein Projekt aus dem Sommersemester 2025 unter der Leitung von Prof. Knut Karger an der Hochschule München.
+
+Kamera | Ton | Schnitt: Raphael Kast
+
+Tonassistenz | Boom Operator: Sophie Hepach
+
+Vielen Dank an Anne Hepach, Benedikt Lattner und Jürgen Kast für ihre Zeit und Bereitschaft.
+
+----
+
+Portraits:
+
+-
+  name: Anne
+  age: 22.0
+  role: Studentin
+  text: 'Anne ist Geoökologie-Studentin in Bayreuth. Sie ernährt sich seit einigen Jahren vegan. Auch in anderen Lebensbereichen versucht sie bewusst mit Energie umzugehen.'
+  video: T77Kt_rs-14
+  image: []
+-
+  name: Benedikt
+  age: 27.0
+  role: Controller
+  text: 'Benedikt ist Controller in einem Krankenhaus. Nebenbei bepflanzt er seinen Garten; produziert Gemüse für sich und Bekannte und spart damit nicht nur Geld.'
+  video: MDtkbljvEwI
+-
+  name: Jürgen
+  age: 66.0
+  role: Rentner
+  text: 'Jürgen ist seit kurzem Rentner. Bereits davor hat er jedoch schon begonnen am Eigenheim Maßnahmen für einen möglichst effizienten und nachhaltigen Energieverbrauch zu ergreifen.'
+  video: U35-MBjhnpM
+
+----
+
+Uuid: mv6huebkj56d6xzb

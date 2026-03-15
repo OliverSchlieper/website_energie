@@ -29,7 +29,7 @@
                         <p>Raphael Kast</p>
                         <h3>Energie im Alltag</h3>
                         <p>Energie zu verbrauchen ist für uns alle selbstverständlich. In drei kurzen Video-Porträts richtet sich der Blick auf Menschen, die durch ihren Lebensstil bewusst oder unbewusst Energie sparen. Statt abstrakter Zahlen stehen persönliche Geschichten, Gewohnheiten und Entscheidungen im Mittelpunkt. Die Arbeit zeigt, wie niedrigenergetische Lebensweisen aussehen können.</p>
-                        <a href="#" class="mehrLink">Mehr erfahren</a>
+                        <a href="projekte/energie-im-alltag" class="mehrLink">Mehr erfahren</a>
                     </figcaption>
                 </figure>
                 <figure>
