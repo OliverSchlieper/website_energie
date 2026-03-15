@@ -15,7 +15,7 @@
   <!-- Intro + Credits -->
   <div class="content-grid">
 
-    <div class="intro p">
+    <div class="intro">
       <?= $page->intro()->kt() ?>
     </div>
 
