@@ -12,17 +12,19 @@
 
 <section class="container">
 
-  <!-- Intro + Credits -->
+  <!-- Intro 
   <div class="content-grid">
 
     <div class="intro p">
       <?= $page->intro()->kt() ?>
     </div>
 
-  </div>
+  </div>-->
 
   <article class="video-grid">
-    <div></div>
+    <div class="intro2 p">
+      <?= $page->intro()->kt () ?>
+    </div>
 
     <?php if ($page->youtube()->isNotEmpty()): ?>
     <div class="video">
