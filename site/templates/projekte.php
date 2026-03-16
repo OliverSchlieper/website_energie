@@ -27,9 +27,7 @@
                 <figcaption>
                     <p>Sabrina Kupka</p>
                     <h3>Konrad und das Dokument A38 </h3>
-                    <p>Ein verschwundenes Dokument, ein verhinderter Schwertransport eines Rotorblatts für ein Windrad
-                        und ein Detektiv mit einer ganz persönlichen Verbindung zum Fall. Als Konrad den Auftrag erhält,
-                        das verschwundene Dokument A38 zu suchen, beginnt für ihn die spannende Suche.</p>
+                    <p>Ein verschwundenes Dokument A38, ein verhinderter Schwertransport und ein Detektiv mit einer ganz persönlichen Verbindung zum Fall. Als Konrad den Auftrag erhält, das verschwundene Dokument zu suchen, beginnt für ihn die spannende Suche. Als er jedoch das Dokument endlich entdeckt, kann er kaum seinen Augen trauen. Plötzlich steht mehr auf dem Spiel als nur der Transport eines Rotorblatts. Deshalb beschließt Konrad die Dinge auf seine eigene Weise zu lösen.</p>
                     <a href="assets/projekte/konrad-und-das-dokument-a38/index.html" class="mehrLink">Mehr erfahren</a>
                 </figcaption>
             </figure>

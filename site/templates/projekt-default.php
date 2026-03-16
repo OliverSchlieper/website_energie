@@ -22,7 +22,7 @@
   </div>-->
 
   <article class="video-grid">
-    <div class="intro2 p">
+    <div class="intro p">
       <?= $page->intro()->kt () ?>
     </div>
 
@@ -38,7 +38,6 @@
 
   </article>
 
-  </section>
+</section>
 
-  <?php snippet('footer') ?>
-  </section>
+<?php snippet('footer') ?>
