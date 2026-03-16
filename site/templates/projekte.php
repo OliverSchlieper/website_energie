@@ -23,7 +23,7 @@
 
         <article class="galerie">
             <figure>
-                <a href="assets/projekte/konrad-und-das-dokument-a38/index.html" class="project-link">
+                <a href="projekte/konrad-und-das-dokument-a38" class="project-link">
                 <div class="project-thumb">
                     <img class="figure-overlay" src="assets/img/figure1.svg" alt="">
                 </div>
