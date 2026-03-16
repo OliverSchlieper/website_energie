@@ -298,6 +298,7 @@ hr {
   background-color: #f3f3f3;
   width: 100%;
   box-shadow: 0 11px 17px -10px rgba(0,0,0,0.2) inset;
+  margin-top: var(--space-xl);
 }
 
 
