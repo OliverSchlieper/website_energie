@@ -67,6 +67,10 @@ a.current {
     color: var(--aktivOderHoverLinkFarbe);
 }
 
+.header .logo:focus,
+.header .logo:active {
+    outline: none;
+}
 
 
 /* ============ Galerie ========== */
@@ -86,18 +90,32 @@ a.current {
         border-right: none;
 }
 
-/* Projekt Thumbnail Farben */
 .project-thumb {
   width: 100%;
   aspect-ratio: 4 / 5;
   margin-bottom: var(--space-m);
+  position: relative;
+  overflow: hidden;
 }
 
+/* Projekt Thumbnail Farben */
 .galerie figure:nth-child(1) .project-thumb { background: var(--color-code-darkred); }
 .galerie figure:nth-child(2) .project-thumb { background: var(--color-code-yellow); }
 .galerie figure:nth-child(3) .project-thumb { background: var(--color-code-green); }
 .galerie figure:nth-child(4) .project-thumb { background: var(--color-code-pink); }
 .galerie figure:nth-child(5) .project-thumb { background: var(--color-code-purple); }
+
+/* Zentrierte Figur am unteren Rand */
+.project-thumb .figure-overlay {
+    position: absolute;
+    bottom: 0;           /* am unteren Rand der Box */
+    left: 50%;           /* horizontal zentrieren */
+    transform: translateX(-50%);
+    width: 80%;          /* Breite des Bildes, anpassbar */
+    height: auto;
+    object-fit: contain; /* Bild bleibt proportional */
+    max-height: 100%;
+}
 
 /* Absatzformatierung */
 .galerie p + p {
@@ -105,13 +123,24 @@ a.current {
 }
 
 .galerie .mehrLink {
-    font-size: 120%;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    line-height: clamp(1.4, 1vw, 1.3);
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    transition: color 0.3s ease; 
 }
 
 .galerie .mehrLink:before {
     content: '→';
-    font-size: 130%;
-    padding-right: 10px;
+    display: inline-block;
+    margin-right: 0.5em;      /* Abstand zwischen Pfeil und Text */
+    transition: transform 0.3s ease; /* sanfte Bewegung beim Hover */
+    font-size: 150% /* etwas größer als der Text */
+}
+
+.mehrLink:hover:before {
+    transform: translateX(5px); /* verschiebt den Pfeil nach rechts */
 }
 
 .galerie figcaption p{

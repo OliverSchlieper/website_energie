@@ -24,7 +24,7 @@
         <article class="galerie">
             <figure>
                 <div class="project-thumb">
-                    <img class="figure-overlay" src="assets/img/figur1.png" alt="">
+                    <img class="figure-overlay" src="assets/img/figure1.svg" alt="">
                 </div>
                 <figcaption>
                     <p>Sabrina Kupka</p>
@@ -34,7 +34,9 @@
                 </figcaption>
             </figure>
             <figure>
-                <div class="project-thumb"></div>
+                <div class="project-thumb">
+                    <img class="figure-overlay" src="assets/img/figure2.svg" alt="">
+                </div>
                 <figcaption>
                     <p>Jakob Giggenbach</p>
                     <h3>Wer kann <span style="font-style: italic;">Energie</span> sparen?</h3>
@@ -46,7 +48,9 @@
                 </figcaption>
             </figure>
             <figure>
-                <div class="project-thumb"></div>
+                <div class="project-thumb">
+                    <img class="figure-overlay" src="assets/img/figure3.svg" alt="">
+                </div>
                 <figcaption>
                     <p>Raphael Kast</p>
                     <h3>Energie im Alltag</h3>
@@ -58,7 +62,9 @@
                 </figcaption>
             </figure>
             <figure>
-                <div class="project-thumb"></div>
+                <div class="project-thumb">
+                    <img class="figure-overlay" src="assets/img/figure4.svg" alt="">
+                </div>
                 <figcaption>
                     <p>Sarah Schmidt</p>
                     <h3>Zukunfts-Talk Harald Lesch & Christian Holler</h3>
@@ -68,7 +74,9 @@
                 </figcaption>
             </figure>
             <figure>
-                <div class="project-thumb"></div>
+                <div class="project-thumb">
+                    <img class="figure-overlay" src="assets/img/figure5.svg" alt="">
+                </div>
                 <figcaption>
                     <p>Alina Schröder</p>
                     <h3>Ondra</h3>
