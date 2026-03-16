@@ -10,7 +10,6 @@ img,
 picture,
 canvas,
 video {
-    /* … oder "auto-width", je nach dem, was Ihr braucht */
     width: 100%;
     height: auto;
     display: block;
@@ -34,30 +33,28 @@ video {
   font-size: 1.125rem;
   line-height: 1.6;
   margin-bottom: var(--space-m);
-
 }
 
-
+/* Projekt Thumbnail Farben */
 .project-thumb {
   width: 100%;
   aspect-ratio: 4 / 5;
   margin-bottom: var(--space-m);
 }
+
 .galerie figure:nth-child(1) .project-thumb { background: var(--color-code-darkred); }
-.galerie figure:nth-child(2) .project-thumb { background: var(--color-code-yellow) }
-.galerie figure:nth-child(3) .project-thumb { background: var(--color-code-green) }
-.galerie figure:nth-child(4) .project-thumb { background: var(--color-code-pink) }
-.galerie figure:nth-child(5) .project-thumb { background: var(--color-code-purple) }
+.galerie figure:nth-child(2) .project-thumb { background: var(--color-code-yellow); }
+.galerie figure:nth-child(3) .project-thumb { background: var(--color-code-green); }
+.galerie figure:nth-child(4) .project-thumb { background: var(--color-code-pink); }
+.galerie figure:nth-child(5) .project-thumb { background: var(--color-code-purple); }
+
+/* ============ Body ========== */
 
 body {
-    /* damit wird Scrollbalken mit berechnet, 
-    sonst "Wackler" zwischen langen und kurzen Seiten */
     min-height: 100vh;
     color: #444;
     background-color: #fff;
-    /* kommt beim nächsten mal dran */
     scroll-behavior: smooth;
-    /* automatische Silbentrennung */
     hyphens: auto;
 }
 
@@ -78,48 +75,56 @@ a:active {
     outline: 1px solid var(--aktivOderHoverLinkFarbe);
 }
 
-/* gerade aktive Seite */
 a.current {
     color: var(--aktivOderHoverLinkFarbe);
 }
 
-/* ============ main ========== */
 
-main {
-    width: var(--container-width);
-    padding: var(--container-padding);
-    margin: 100px auto;
-}
+
+/* ============ Galerie ========== */
 
 .galerie {
-    /* outline: 1px solid green; */
+
     display: grid;
-    gap: 60px 16px;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
 
-    p + p {
-        text-indent: 1.5rem;
-    }
+    /* Standard ca. 4 Cards */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 
-    .mehrLink {
-        font-size: 120%;
-    }
+    gap: 60px 32px;
 
-    .mehrLink:before {
-        content: '→';
-        font-size: 130%;
-        padding-right: 10px;
-    }
+}
 
-    figure {
-        border-right: 1px solid rgba(0, 0, 0, 0.5);
-        padding-right: 16px;
-    }
+
+/* einzelne Cards */
+.galerie figure{
+    padding-right: 32px;
+    border-right: 1px solid rgba(0,0,0,0.4);
+}
+/* letzte Card jeder Reihe soll keine Linie haben */
+.galerie figure:nth-child(4n){
+    border-right: none;
+}
+
+/* Absatzformatierung */
+.galerie p + p {
+    text-indent: 1.5rem;
+}
+
+.galerie .mehrLink {
+    font-size: 120%;
+}
+
+.galerie .mehrLink:before {
+    content: '→';
+    font-size: 130%;
+    padding-right: 10px;
 }
 
 .galerie figcaption p{
   max-width: 60ch;
 }
+
+/* ============ Responsive ========== */
 
 @media (max-width: 900px) {
 
@@ -133,18 +138,11 @@ main {
   }
 
 }
-@media (max-width: 700px) {
 
-  .galerie figure{
-    border-right: none;
-    padding-right: 0;
-  }
-
-}
 @media (max-width: 600px) {
 
   .galerie{
-    gap: 40px 12px;
+    gap: 40px 1px;
   }
 
   .project-thumb{
