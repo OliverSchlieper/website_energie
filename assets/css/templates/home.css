@@ -1,72 +1,379 @@
-.home-grid {
-  display: grid;
-  list-style: none;
-  grid-gap: 1.5rem;
-  line-height: 0;
-  grid-template-columns: repeat(1, 1fr);
-  grid-auto-flow: dense;
-}
-.home-grid li {
-  position: relative;
-  --cols: 1;
-  --rows: 1;
+/* --- Redesigned Premium Home Page Styles (Tiles/Kacheln) --- */
 
-  overflow: hidden;
-  background: #000;
-  line-height: 0;
+:root {
+  --tile-bg: var(--color-background);
+  --tile-border: var(--color-black);
+  --tile-radius: 0px; /* Brighter, harder look based on authors.css shadows */
+  --tile-shadow: 20px 20px 0px #e6cfe6; /* Pinkish shadow matching the authors page */
+  --tile-shadow-hover: 30px 30px 0px #e6cfe6;
+  --btn-bg: #FC5555; /* HM Red from index.css */
+  --btn-text: var(--color-white);
+  --btn-hover-bg: #e04444;
 }
-.home-grid li:first-child {
-  --cols: 2;
-  --rows: 2;
+
+.home-page-redesign {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  /* Increased padding-top to prevent header overlap */
+  padding: 120px 20px 100px;
 }
-.home-grid li:nth-child(5) {
-  --cols: 2;
+
+/* Base Tile Styles */
+.tile {
+  background: var(--tile-bg);
+  border: 3px solid var(--tile-border);
+  box-shadow: var(--tile-shadow);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden; /* Contains the image */
 }
-.home-grid li:nth-child(6) {
-  --rows: 2;
+
+.tile:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: var(--tile-shadow-hover);
 }
-.home-grid li:nth-child(7) {
-  --cols: 2;
+
+/* --- Tile 1: Book Section (Split Layout) --- */
+.book-tile {
+  display: grid;
+  grid-template-columns: 1fr;
 }
-.home-grid a {
-  display: block;
-  height: 10rem;
+
+@media (min-width: 900px) {
+  .book-tile {
+    grid-template-columns: 1fr 1.5fr;
+  }
 }
-.home-grid img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+
+.book-tile-image {
+  border-bottom: 3px solid var(--tile-border);
+  background: #f4f4f4; /* Subtle background if image doesn't fill */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .book-tile-image {
+    border-bottom: none;
+    border-right: 3px solid var(--tile-border);
+  }
+}
+
+.book-tile-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: all .3s;
-}
-.home-grid figcaption {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  color: #fff;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  line-height: 1;
-  text-align: center;
-  background: rgba(0,0,0, .5);
+  display: block;
 }
 
-@media screen and (min-width: 45em) {
-  .home-grid {
-    grid-template-columns: repeat(3, 1fr);
+.placeholder-image {
+  padding: 40px;
+  color: var(--color-code-dark-grey);
+  font-weight: 500;
+  text-align: center;
+}
+
+.book-tile-content {
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 900px) {
+  .book-tile-content {
+    padding: 60px 80px;
   }
-  .home-grid li {
-    grid-column-start: span var(--cols);
-    grid-row-start: span var(--rows);
+}
+
+.book-tile-content h2 {
+  font-family: var(--font-family-sans);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 400; /* UntitledSans Regular */
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin-bottom: 25px;
+  color: var(--color-black);
+}
+
+.book-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  color: #444;
+}
+
+/* --- Buttons --- */
+.button-wrapper {
+  margin-top: auto; /* Pushes button to bottom if space allows */
+  padding-top: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 18px 36px;
+  text-decoration: none;
+  border: 3px solid var(--tile-border);
+  box-shadow: 6px 6px 0px var(--tile-border);
+  transition: all 0.15s ease;
+}
+
+.cta-button:hover {
+  background: var(--btn-hover-bg);
+  transform: translate(2px, 2px);
+  box-shadow: 4px 4px 0px var(--tile-border);
+  color: var(--btn-text);
+}
+
+.cta-button:active {
+  transform: translate(6px, 6px);
+  box-shadow: 0px 0px 0px var(--tile-border);
+}
+
+/* --- Tile 2: About the Book Section --- */
+.about-tile {
+  text-align: left;
+}
+
+.about-tile-content {
+  padding: 60px 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (min-width: 900px) {
+  .about-tile-content {
+    padding: 80px 80px;
   }
-  .home-grid a {
-    padding-bottom: 52.65%;
+}
+
+.about-tile-content h2 {
+  font-family: var(--font-family-sans);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 400; /* UntitledSans Regular */
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  color: var(--color-black);
+}
+
+.about-text {
+  font-family: var(--font-family-sans);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+}
+
+.about-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Tile 3: Projects Section --- */
+.projects-tile {
+  text-align: center;
+}
+
+.projects-tile-content {
+  padding: 60px 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (min-width: 900px) {
+  .projects-tile-content {
+    padding: 80px 60px;
   }
+}
+
+.projects-tile-content h2 {
+  font-family: var(--font-family-sans);
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 400; /* UntitledSans Regular */
+  margin-bottom: 20px;
+  color: var(--color-black);
+}
+
+.projects-text {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 35px;
+  color: #555;
+}
+
+.btn-secondary {
+  display: inline-block;
+  background: transparent;
+  color: var(--color-black);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  text-decoration: none;
+  border: 3px solid var(--tile-border);
+  box-shadow: 6px 6px 0px var(--tile-border);
+  transition: all 0.15s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--color-black);
+  color: var(--color-white);
+  transform: translate(2px, 2px);
+  box-shadow: 4px 4px 0px #e6cfe6; /* Pink hover shadow */
+}
+
+.btn-secondary:active {
+  transform: translate(6px, 6px);
+  box-shadow: 0px 0px 0px transparent;
+}
+
+/* --- Section: Reviews / Testimonials --- */
+.reviews-section {
+  position: relative;
+}
+
+/* --- Carousel Layout --- */
+.reviews-carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.reviews-carousel {
+  flex-grow: 1;
+  overflow: hidden; /* Hides upcoming slides */
+}
+
+.reviews-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.review-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  padding: 10px; /* Space for box-shadow on hover */
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+}
+
+.review-slide.active {
+  opacity: 1;
+}
+
+/* Controls */
+.carousel-control {
+  background: var(--tile-bg);
+  border: 3px solid var(--tile-border);
+  color: var(--color-black);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.carousel-control:hover {
+  background: #e6cfe6; /* Pink hover */
+  transform: scale(1.1);
+}
+
+.carousel-control:active {
+  transform: scale(0.95);
+}
+
+.review-card {
+  margin: 0;
+  padding: 0;
+  background: var(--tile-bg);
+  border: 3px solid var(--tile-border);
+  box-shadow: 10px 10px 0px #e6cfe6; 
+  display: grid;
+  grid-template-columns: 1fr;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@media (min-width: 600px) {
+  .review-card {
+    grid-template-columns: 200px 1fr;
+  }
+}
+
+.review-card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 15px 15px 0px #e6cfe6;
+}
+
+.review-image {
+  border-bottom: 3px solid var(--tile-border);
+  display: flex;
+}
+
+@media (min-width: 600px) {
+  .review-image {
+    border-bottom: none;
+    border-right: 3px solid var(--tile-border);
+  }
+}
+
+.review-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  /* Option for greyscale stylization to match authors design:
+     filter: grayscale(100%) contrast(1.2); 
+  */
+}
+
+.review-content {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.review-text {
+  font-family: var(--font-family-sans);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  font-style: normal;
+  color: var(--color-black);
+  margin-bottom: 25px;
+}
+
+.review-text p {
+  margin-bottom: 0;
+}
+
+.review-author {
+  font-family: var(--font-family-sans);
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--color-black);
+  text-align: left;
+  border-top: 2px solid var(--color-black);
+  padding-top: 15px;
+  display: inline-block;
+  align-self: flex-start;
 }

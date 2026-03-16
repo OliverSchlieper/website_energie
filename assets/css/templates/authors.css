@@ -1,20 +1,20 @@
 /* --- AUTOREN SEITE: LINKED TO INDEX.CSS --- */
 
 .authors-page {
-  max-width: 1200px;
+  max-width: 1400px; /* Increased from 1200px to allow card breathing room in 2x2 */
   margin: 0 auto;
   padding: 80px 40px;
   /* Nutzt die globale Font-Definition */
   font-family: var(--font-family-sans);
 }
 
-/* Die massive Überschrift (60px, UntitledSans Bold) */
+/* Die massive Überschrift (60px, UntitledSans Regular) */
 .section-header h1 {
   font-family: var(--font-family-sans) !important;
   font-size: 55px !important;
   line-height: 54.7px !important;
   letter-spacing: -1px !important;
-  font-weight: 700 !important; /* Greift auf UntitledSans-Bold zu */
+  font-weight: 400 !important; /* UntitledSans Regular */
   text-transform: uppercase;
   color: #333333;
   
@@ -25,9 +25,16 @@
 }
 
 .authors-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+}
+
+@media (min-width: 1100px) {
+  .authors-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
 }
 
 /* Die Karte mit dem pinken Schatten und Animation */
@@ -51,27 +58,31 @@
 
 .author-image {
   border-right: 3px solid var(--color-black);
+  position: relative; /* Container for absolute image if needed, or just flex */
+  display: flex;
 }
 
 .author-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Ensures image fills the container without squishing */
+  object-position: center top; /* Focus on the face */
   display: block;
+  min-height: 350px; /* Give it a minimum height so it doesn't get squished if text is very short */
 }
 
 .author-details {
-  padding: 60px;
+  padding: 40px; /* Reduced from 60px to fit better in 2x2 grid */
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-/* Autorenname (UntitledSans Bold) */
+/* Autorenname (UntitledSans Regular) */
 .author-details h2 {
   font-family: var(--font-family-sans) !important;
   font-size: 48px;
-  font-weight: 700 !important;
+  font-weight: 400 !important;
   line-height: 0.9;
   letter-spacing: -1px;
   margin-bottom: 15px;
@@ -115,7 +126,12 @@
 }
 
 /* Mobile Fix */
-@media (max-width: 900px) {
+@media (max-width: 1099px) { /* Trigger standard card layout slightly earlier so it breaks gracefully */
   .author-card { grid-template-columns: 1fr; }
   .section-header h1 { font-size: 40px; }
+  .author-image { border-right: none; border-bottom: 3px solid var(--color-black); }
+  .author-image img {
+    aspect-ratio: 16/9; /* Make it more landscape-ish on mobile if stacked */
+    min-height: auto;
+  }
 }
