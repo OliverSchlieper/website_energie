@@ -35,18 +35,6 @@ video {
   margin-bottom: var(--space-m);
 }
 
-/* Projekt Thumbnail Farben */
-.project-thumb {
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  margin-bottom: var(--space-m);
-}
-
-.galerie figure:nth-child(1) .project-thumb { background: var(--color-code-darkred); }
-.galerie figure:nth-child(2) .project-thumb { background: var(--color-code-yellow); }
-.galerie figure:nth-child(3) .project-thumb { background: var(--color-code-green); }
-.galerie figure:nth-child(4) .project-thumb { background: var(--color-code-pink); }
-.galerie figure:nth-child(5) .project-thumb { background: var(--color-code-purple); }
 
 /* ============ Body ========== */
 
@@ -84,26 +72,32 @@ a.current {
 /* ============ Galerie ========== */
 
 .galerie {
-
     display: grid;
-
-    /* Standard ca. 4 Cards */
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-
-    gap: 60px 32px;
-
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 60px 16px; /* Zeilen- und Spaltenabstand */
 }
 
+/* Jede Karte bekommt rechts eine Linie */
+.galerie figure {
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+    padding-right: 16px;
+}
+.galerie figure:nth-child(5n) {
+        border-right: none;
+}
 
-/* einzelne Cards */
-.galerie figure{
-    padding-right: 32px;
-    border-right: 1px solid rgba(0,0,0,0.4);
+/* Projekt Thumbnail Farben */
+.project-thumb {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  margin-bottom: var(--space-m);
 }
-/* letzte Card jeder Reihe soll keine Linie haben */
-.galerie figure:nth-child(4n){
-    border-right: none;
-}
+
+.galerie figure:nth-child(1) .project-thumb { background: var(--color-code-darkred); }
+.galerie figure:nth-child(2) .project-thumb { background: var(--color-code-yellow); }
+.galerie figure:nth-child(3) .project-thumb { background: var(--color-code-green); }
+.galerie figure:nth-child(4) .project-thumb { background: var(--color-code-pink); }
+.galerie figure:nth-child(5) .project-thumb { background: var(--color-code-purple); }
 
 /* Absatzformatierung */
 .galerie p + p {
@@ -125,6 +119,7 @@ a.current {
 }
 
 /* ============ Responsive ========== */
+
 
 @media (max-width: 900px) {
 
@@ -150,3 +145,26 @@ a.current {
   }
 
 }
+
+@media (min-width: 1200px) { /* ca. 4 Spalten */
+    .galerie figure:nth-child(4n) {
+        border-right: none;
+    }
+}
+@media (min-width: 900px) and (max-width: 1199px) { /* ca. 3 Spalten */
+    .galerie figure:nth-child(3n) {
+        border-right: none;
+    }
+}
+@media (min-width: 600px) and (max-width: 899px) { /* ca. 2 Spalten */
+    .galerie figure:nth-child(2n) {
+        border-right: none;
+    }
+}
+@media (max-width: 599px) { /* 1 Spalte */
+    .galerie figure {
+        border-right: none;
+        padding-right: 0;
+    }
+}
+
