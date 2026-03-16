@@ -2,6 +2,80 @@ Title: Home
 
 ----
 
+Bookheadline: Energie Verstehen
+
+----
+
+Bookintro: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+----
+
+Ctatext: Jetzt kaufen
+
+----
+
+Ctaurl: https://www.hugendubel.de/de
+
+----
+
+Reviewslist:
+
+-
+  reviewtext: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et'
+  reviewauthor: 'Marius Mann'
+  reviewimage:
+    - 'file://mivmlymgavvgfprb'
+-
+  reviewtext: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea'
+  reviewauthor: 'Babel Butz'
+  reviewimage:
+    - 'file://0wm9t8ksxv3hqbcj'
+
+----
+
+Aboutheadline: Über Das Buch
+
+----
+
+Abouttext: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+----
+
+Abouthighlights:
+
+-
+  highlighttitle: 'Kapitel 1'
+  highlighttext: 'Hier ist kapitel 1 brudaaa'
+-
+  highlighttitle: 'Kapitel 2'
+  highlighttext: 'Hier ist kapitel 2 was gehhhht'
+
+----
+
+Projectsheadline: Unsere Projekte: Energie neu erzählt
+
+----
+
+Projectsintro: Was passiert, wenn Design auf Wissenschaft trifft? Inspiriert von Harald Leschs Standardwerk zum Energieverbrauch, haben Studierende der Fakultät für Design die Welt der Kilowattstunden in Geschichten verwandelt. Von der spannenden Detektivsuche nach einem Rotorblatt bis hin zum interaktiven Spiel über unsere gemeinsame Zukunft: Entdecke ein Kaleidoskop aus Filmen, Games und Porträts, die Energie greifbar machen.
+
+----
+
+Projectslinktext: Jetzt in die Storyworlds eintauchen
+
+----
+
+Projectslinkurl: - 'page://e6axv66onos7qdht'
+
+----
+
+Bookcover: - 'file://pw8xk10hixyhhyie'
+
+----
+
+Reviewsheadline: Rezension
+
+----
+
 Headline: Welcome to Kirby's Starterkit
 
 ----

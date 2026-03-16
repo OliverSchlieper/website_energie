@@ -1,7 +1,205 @@
-.contact {
-  padding: 3rem;
-  border: 2px solid #000;
+/* --- ÜBER UNS (ABOUT) PAGE --- */
+
+.about-page {
+  font-family: var(--font-family-sans);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 30px 120px;
 }
-.contact .h1 {
-  margin-bottom: 1.5rem;
+
+/* Header */
+.about-header {
+  margin-bottom: 100px;
+  border-left: 20px solid #e6cfe6;
+  padding-left: 25px;
+}
+
+.about-header h1 {
+  font-family: var(--font-family-sans);
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  color: var(--color-black);
+  margin-bottom: 20px;
+}
+
+.about-intro {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #555;
+  max-width: 600px;
+}
+
+/* Person container */
+.about-persons {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+/* Person card base */
+.person-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 3px solid var(--color-black);
+  box-shadow: 20px 20px 0px #e6cfe6;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+              box-shadow 0.2s ease;
+}
+
+.person-card:hover {
+  transform: translate(-8px, -8px);
+  box-shadow: 30px 30px 0px #e6cfe6;
+}
+
+/* Image left layout */
+@media (min-width: 900px) {
+  .person-card--left {
+    grid-template-columns: 1fr 1.5fr;
+  }
+  /* Image right layout for alternating feel */
+  .person-card--right {
+    grid-template-columns: 1.5fr 1fr;
+    direction: rtl; /* Flip the grid order */
+  }
+  .person-card--right > * {
+    direction: ltr; /* Restore text direction inside */
+  }
+}
+
+/* Image section */
+.person-image {
+  background: #f0f0f0;
+  border-bottom: 3px solid var(--color-black);
+  overflow: hidden;
+  min-height: 400px;
+  display: flex;
+}
+
+@media (min-width: 900px) {
+  .person-image {
+    border-bottom: none;
+    border-right: 3px solid var(--color-black);
+  }
+  .person-card--right .person-image {
+    border-right: none;
+    border-left: 3px solid var(--color-black);
+  }
+}
+
+.person-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  min-height: 400px;
+  filter: grayscale(15%);
+  transition: filter 0.3s ease;
+}
+
+.person-card:hover .person-image img {
+  filter: grayscale(0%);
+}
+
+.person-image-placeholder {
+  width: 100%;
+  min-height: 400px;
+  background: repeating-linear-gradient(
+    45deg,
+    #e6cfe6,
+    #e6cfe6 5px,
+    #f0f0f0 5px,
+    #f0f0f0 25px
+  );
+}
+
+/* Info section */
+.person-info {
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 900px) {
+  .person-info {
+    padding: 60px 70px;
+  }
+}
+
+/* Role tag */
+.person-role {
+  font-family: var(--font-family-sans);
+  display: inline-block;
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: 6px 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+
+/* Name heading */
+.person-info h2 {
+  font-family: var(--font-family-sans);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 400;
+  letter-spacing: -1.5px;
+  line-height: 1;
+  margin-bottom: 25px;
+  color: var(--color-black);
+}
+
+/* Bio text */
+.person-bio {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 30px;
+  border-top: 2px solid #e6cfe6;
+  padding-top: 25px;
+}
+
+.person-bio p {
+  margin-bottom: 15px;
+}
+.person-bio p:last-child {
+  margin-bottom: 0;
+}
+
+/* Contact links */
+.person-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.person-link {
+  font-family: var(--font-family-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-black);
+  border-bottom: 2px solid #e6cfe6;
+  padding-bottom: 2px;
+  transition: all 0.2s ease;
+}
+
+.person-link:hover {
+  border-bottom-color: var(--color-black);
+  color: #FC5555;
+  border-bottom-color: #FC5555;
+}
+
+/* Mobile */
+@media (max-width: 899px) {
+  .person-card--right {
+    direction: ltr;
+  }
 }

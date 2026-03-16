@@ -9,12 +9,40 @@ Headline: Die Autoren
 Authors-list:
 
 -
-  name: 'Vincent Van Gogh'
-  role: 'Experte für Sonnenblumen'
-  bio: 'Vincent van Gogh (1853–1890) war ein einflussreicher niederländischer Maler des Post-Impressionismus, der in nur zehn Jahren über 2000 Kunstwerke (u.a. „Sonnenblumen“) schuf. Nach gescheiterten Versuchen als Kunsthändler und Prediger begann er erst mit 27 Jahren zu malen. Trotz psychischer Probleme und Armut schuf er farbintensive Bilder, die ihn postum weltberühmt machten'
-  email: autor@email.de
+  name: 'Charlotte Kelschenbach'
+  role: Designer
+  bio: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam'
+  email: charlotte@email.com
   image:
-    - 'file://9l8nbdwwvb1uubp9'
+    - 'file://qjv2efcxdozyqm0l'
+-
+  name: 'Axel Kleidon'
+  role: Autor
+  bio: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam'
+  email: axel@email.com
+  image:
+    - 'file://zobxza7q8jffwlo3'
+-
+  name: 'Christian Holler'
+  role: Autor
+  bio: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam'
+  email: christian@email.com
+  image:
+    - 'file://dk6u9w2hkzvgxkem'
+-
+  name: 'Harald Lesch'
+  role: Autor
+  bio: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam'
+  email: harald@email.com
+  image:
+    - 'file://v6h4kxkrc4fhac88'
+-
+  name: 'Joachim Guakel'
+  role: Autor
+  bio: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam'
+  email: joachim@email.com
+  image:
+    - 'file://z29pduzrni5lvymi'
 
 ----
 

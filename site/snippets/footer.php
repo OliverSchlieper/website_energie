@@ -12,31 +12,43 @@
   </main>
 
   <footer class="footer">
-    <div class="grid">
-      <div class="column" style="--columns: 8">
-        <h2><a href="https://getkirby.com">Made with Kirby</a></h2>
-        <p>
-          Kirby: the file-based CMS that adapts to any project, loved by developers and editors alike
-        </p>
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3><?= $site->footerHeadline()->or('Kontakt & Infos')->esc() ?></h3>
+        <?php if ($site->footerText()->isNotEmpty()): ?>
+          <div class="footer-text">
+            <?= $site->footerText()->kt() ?>
+          </div>
+        <?php endif ?>
       </div>
-      <div class="column" style="--columns: 2">
-        <h2>Pages</h2>
-        <ul>
-          <?php foreach ($site->children()->listed() as $example): ?>
-          <li><a href="<?= $example->url() ?>"><?= $example->title()->esc() ?></a></li>
-          <?php endforeach ?>
-        </ul>
-      </div>
-      <div class="column" style="--columns: 2">
-        <h2>Kirby</h2>
-        <ul>
-          <li><a href="https://getkirby.com">Website</a></li>
-          <li><a href="https://getkirby.com/docs">Docs</a></li>
-          <li><a href="https://forum.getkirby.com">Forum</a></li>
-          <li><a href="https://chat.getkirby.com">Chat</a></li>
-          <li><a href="https://github.com/getkirby">GitHub</a></li>
-        </ul>
-      </div>
+
+      <?php $links = $site->footerLinks()->toStructure(); ?>
+      <?php if ($links->isNotEmpty()): ?>
+        <div class="footer-links">
+          <h3>Links</h3>
+          <ul>
+            <?php foreach ($links as $link): ?>
+              <li><a href="<?= $link->linkUrl() ?>"><?= $link->linkText()->esc() ?></a></li>
+            <?php endforeach ?>
+          </ul>
+        </div>
+      <?php endif ?>
+
+      <?php $socials = $site->socialLinks()->toStructure(); ?>
+      <?php if ($socials->isNotEmpty()): ?>
+        <div class="footer-social">
+          <h3>Social Media</h3>
+          <ul>
+            <?php foreach ($socials as $social): ?>
+              <li><a href="<?= $social->platformUrl() ?>" target="_blank" rel="noopener noreferrer"><?= $social->platformName()->esc() ?></a></li>
+            <?php endforeach ?>
+          </ul>
+        </div>
+      <?php endif ?>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; <?= date('Y') ?> <?= $site->title()->esc() ?>. Alle Rechte vorbehalten.</p>
     </div>
   </footer>
 

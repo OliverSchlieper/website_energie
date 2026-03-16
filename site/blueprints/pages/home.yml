@@ -1,34 +1,115 @@
-# Each page blueprint must have a title, the title may be different from the file name
 title: Home
-
-# Each page can have an icon that is shown in page listings when no preview image is available.
 icon: 🏠
 
-# Page options allow you to control how users can interact with the page.
-# Here we prevent changing the page status (the home page cannot be renamed or deleted by default)
-# More about page options: https://getkirby.com/docs/reference/panel/blueprints/page#options
 options:
   changeStatus: false
 
-# Here we define an info section and a pages section (`photography`)
-sections:
-  content:
-    type: fields
-    fields:
-      headline:
-        type: text
-        width: 1/2
-      gap:
-        width: 1/2
-      subheadline:
-        type: text
-        width: 1/2
+columns:
+  main:
+    width: 2/3
+    sections:
+      bookSection:
+        type: fields
+        fields:
+          bookHeadline:
+            label: Buch Headline
+            type: text
+          bookIntro:
+            label: Text zum Buch
+            type: textarea
+            buttons:
+              - bold
+              - italic
+              - link
+          ctaText:
+            label: Button Text (z.B. "Jetzt kaufen")
+            type: text
+            width: 1/2
+          ctaUrl:
+            label: Button Link
+            type: url
+            width: 1/2
+            
+      reviewsSection:
+        type: fields
+        fields:
+          reviewsList:
+            label: Rezensionen hinzufügen
+            type: structure
+            fields:
+              reviewText:
+                label: Zitat / Text
+                type: textarea
+                size: small
+                buttons:
+                  - bold
+                  - italic
+              reviewAuthor:
+                label: Autor / Medium
+                type: text
+              reviewImage:
+                label: Foto der Person
+                type: files
+                max: 1
+                layout: cards
+                multiple: false
+      
+      aboutBookSection:
+        type: fields
+        fields:
+          aboutHeadline:
+            label: Über das Buch Überschrift
+            type: text
+            default: "Über das Buch"
+          aboutText:
+            label: Text über das Buch
+            type: textarea
+            buttons:
+              - bold
+              - italic
+              - link
+          aboutHighlights:
+            label: Kapitel / Highlight-Boxen
+            type: structure
+            fields:
+              highlightTitle:
+                label: Titel (z.B. Kapitel 1 oder Key-Takeaway)
+                type: text
+              highlightText:
+                label: Kurze Beschreibung
+                type: textarea
+                size: small
 
-  # The photography section extends a pages section defined in the `/site/blueprints/section/album.yml` blueprint
-  # More about reusing and extending sections: https://getkirby.com/docs/guide/blueprints/extending-blueprints#reusing-and-extending-sectionss
-  photography:
-    label: Photography
-    extends: sections/albums
-    status: listed
-    size: small
-    help: All projects for the homepage are being pulled from the photography page.
+      projectsSection:
+        type: fields
+        fields:
+          projectsHeadline:
+            label: Projekte Kachel Headline
+            type: text
+          projectsIntro:
+            label: Projekte Kurztext
+            type: textarea
+            size: small
+            buttons: false
+          projectsLinkText:
+            label: Projekte Button Text
+            type: text
+            width: 1/2
+          projectsLinkUrl:
+            label: Projekte Verlinkung
+            type: pages
+            max: 1
+            width: 1/2
+
+  sidebar:
+    width: 1/3
+    sections:
+      mediaSection:
+        type: fields
+        fields:
+          bookCover:
+            label: Buchcover (Hochkant)
+            type: files
+            max: 1
+            layout: cards
+            multiple: false
