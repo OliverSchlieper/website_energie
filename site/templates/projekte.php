@@ -2,7 +2,7 @@
 
 <main>
     <div class="container">
-        <h3>Projekte</h3>
+        <h3><?= $page->title()->esc() ?></h3>
         <h2>Storyworld Energy</h2>
         <div class="content-grid">
 
