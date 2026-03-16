@@ -34,6 +34,17 @@
     display: block;
 }
 
+/* Logo-Container */
+.header .logo img {
+    transition: transform 0.3s ease; /* sanfte Animation */
+    display: block; /* verhindert kleine Verschiebungen */
+}
+
+/* Hover-Effekt: Logo vergrößern */
+.header .logo:hover img {
+    transform: scale(1.2); /* skaliert 20% größer */
+}
+
 /*button {
   border: none;
   padding: 4px 8px 4px 20px;

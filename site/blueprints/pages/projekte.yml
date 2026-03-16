@@ -4,5 +4,6 @@ sections:
   projects:
     type: pages
     templates:
-      - projekt-video
+      - projekt-sarah
+      - projekt-sabrina
       - projekt-raphael

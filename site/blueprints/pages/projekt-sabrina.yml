@@ -1,0 +1,19 @@
+title: Projekt Sabrina
+
+fields:
+  author:
+    label: Author
+    type: text
+
+  intro:
+    label: Einleitung
+    type: textarea
+
+  credits:
+    label: Credits
+    type: textarea
+
+  image:
+    label: Bild
+    type: files
+    max: 1

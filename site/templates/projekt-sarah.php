@@ -12,15 +12,6 @@
 
 <section class="container">
 
-  <!-- Intro 
-  <div class="content-grid">
-
-    <div class="intro p">
-      <?= $page->intro()->kt() ?>
-    </div>
-
-  </div>-->
-
   <article class="video-grid">
     <div class="intro p">
       <?= $page->intro()->kt () ?>

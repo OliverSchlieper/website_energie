@@ -23,16 +23,24 @@
 
         <article class="galerie">
             <figure>
-                <div class="project-thumb"></div>
+                <a href="assets/projekte/konrad-und-das-dokument-a38/index.html" class="project-link">
+                <div class="project-thumb">
+                    <img class="figure-overlay" src="assets/img/figure1.svg" alt="">
+                </div>
+                </a>
                 <figcaption>
                     <p>Sabrina Kupka</p>
                     <h3>Konrad und das Dokument A38 </h3>
-                    <p>Ein verschwundenes Dokument A38, ein verhinderter Schwertransport und ein Detektiv mit einer ganz persönlichen Verbindung zum Fall. Als Konrad den Auftrag erhält, das verschwundene Dokument zu suchen, beginnt für ihn die spannende Suche. Als er jedoch das Dokument endlich entdeckt, kann er kaum seinen Augen trauen. Plötzlich steht mehr auf dem Spiel als nur der Transport eines Rotorblatts. Deshalb beschließt Konrad die Dinge auf seine eigene Weise zu lösen.</p>
+                    <p>Ein verhinderter Schwertransport, ein verschollenes Dokument — Detektiv Alfred Konrad begibt sich ins Herz der Bürokratie. Doch dabei entdeckt er mehr als er eigentlich finden wollte. Ein satirisches Hörspiel über Formulare, Behörden und Entscheidungen mit Folgen.</p>
                     <a href="assets/projekte/konrad-und-das-dokument-a38/index.html" class="mehrLink">Mehr erfahren</a>
                 </figcaption>
             </figure>
             <figure>
-                <div class="project-thumb"></div>
+                <a href="assets/projekte/energie-sparen/index.html" class="project-link">
+                <div class="project-thumb">
+                    <img class="figure-overlay" src="assets/img/figure2.svg" alt="">
+                </div>
+                </a>
                 <figcaption>
                     <p>Jakob Giggenbach</p>
                     <h3>Wer kann <span style="font-style: italic;">Energie</span> sparen?</h3>
@@ -44,7 +52,11 @@
                 </figcaption>
             </figure>
             <figure>
-                <div class="project-thumb"></div>
+                <a href="projekte/energie-im-alltag" class="project-link">
+                <div class="project-thumb">
+                    <img class="figure-overlay" src="assets/img/figure3.svg" alt="">
+                </div>
+                </a>
                 <figcaption>
                     <p>Raphael Kast</p>
                     <h3>Energie im Alltag</h3>
@@ -56,7 +68,11 @@
                 </figcaption>
             </figure>
             <figure>
-                <div class="project-thumb"></div>
+                <a href="projekte/zukunfts-talk" class="project-link">
+                <div class="project-thumb">
+                    <img class="figure-overlay" src="assets/img/figure4.svg" alt="">
+                </div>
+                </a>
                 <figcaption>
                     <p>Sarah Schmidt</p>
                     <h3>Zukunfts-Talk Harald Lesch & Christian Holler</h3>
@@ -66,7 +82,11 @@
                 </figcaption>
             </figure>
             <figure>
-                <div class="project-thumb"></div>
+                <a href="https://my.spline.design/ondraalinaschrder-msa0a6Is4LzZ8mMGQTOR2YYq/" class="project-link">
+                <div class="project-thumb">
+                    <img class="figure-overlay" src="assets/img/figure5.svg" alt="">
+                </div>
+                </a>
                 <figcaption>
                     <p>Alina Schröder</p>
                     <h3>Ondra</h3>
