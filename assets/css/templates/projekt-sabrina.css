@@ -1,0 +1,137 @@
+.title-bar {
+  width: 100%;
+  background: var(--color-code-darkred);
+  padding: 20rem 0 1rem 0; 
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: var(--space-l);
+}
+
+.title-bar h1{
+  max-width: 20ch;
+  color: var(--color-white);
+  margin: 0;
+}
+/* Author */
+
+.project-author{
+  color: var(--color-white);
+  opacity: .9;
+}
+
+
+/* ------------------------------
+   Intro + Credits Grid
+--------------------------------*/
+
+.content-grid{
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  gap: 4rem;
+  margin-bottom: var(--space-l);
+}
+
+.content-grid .intro p{
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  line-height: 1.35;
+  margin-bottom: var(--space-m);
+  font-weight: 400;
+  max-width: 60ch;
+}
+
+.content-grid .credits p{
+  font-size: clamp(1rem, 1.1vw, 1.125rem);
+  line-height: 1.6;
+  margin-bottom: var(--space-m);
+}
+
+
+/* ------------------------------
+   Link Grid (Text + Bild)
+--------------------------------*/
+
+.link-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: var(--space-xl);
+}
+
+
+/* Text im Linkbereich */
+
+.linktext h2{
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  line-height: 1.2;
+  max-width: 25ch;
+}
+
+
+/* Bild / Thumb */
+
+.project-thumb{
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+/* ------------------------------
+   Tablet
+--------------------------------*/
+
+@media (max-width: 900px){
+
+  .title-bar{
+    padding: 12rem 0 1rem;
+  }
+
+  .content-grid{
+    grid-template-columns: 1fr;
+    gap: var(--space-l);
+  }
+
+  .content-grid .intro p{
+    max-width: 100%;
+  }
+
+  .link-grid{
+    grid-template-columns: 1fr;
+    gap: var(--space-m);
+  }
+
+}
+
+
+/* ------------------------------
+   Mobile
+--------------------------------*/
+
+@media (max-width: 600px){
+
+  h1{
+    font-size: 2rem;
+    margin-bottom: var(--space-s);
+  }
+
+  h2{
+    font-size: 1.5rem;
+  }
+
+  .title-bar{
+    padding: 8rem 0 .5rem;
+    margin-bottom: var(--space-m);
+  }
+
+  .title-bar h1{
+    max-width: 100%;
+  }
+
+  .project-author{
+    margin-top: var(--space-s);
+  }
+
+}

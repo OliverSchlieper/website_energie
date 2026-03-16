@@ -31,7 +31,7 @@
                 <figcaption>
                     <p>Sabrina Kupka</p>
                     <h3>Konrad und das Dokument A38 </h3>
-                    <p>Ein verschwundenes Dokument A38, ein verhinderter Schwertransport und ein Detektiv mit einer ganz persönlichen Verbindung zum Fall. Als Konrad den Auftrag erhält, das verschwundene Dokument zu suchen, beginnt für ihn die spannende Suche. Als er jedoch das Dokument endlich entdeckt, kann er kaum seinen Augen trauen. Plötzlich steht mehr auf dem Spiel als nur der Transport eines Rotorblatts. Deshalb beschließt Konrad die Dinge auf seine eigene Weise zu lösen.</p>
+                    <p>Ein verhinderter Schwertransport, ein verschollenes Dokument — Detektiv Alfred Konrad begibt sich ins Herz der Bürokratie. Doch dabei entdeckt er mehr als er eigentlich finden wollte. Ein satirisches Hörspiel über Formulare, Behörden und Entscheidungen mit Folgen.</p>
                     <a href="assets/projekte/konrad-und-das-dokument-a38/index.html" class="mehrLink">Mehr erfahren</a>
                 </figcaption>
             </figure>
