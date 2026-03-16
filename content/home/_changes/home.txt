@@ -25,11 +25,6 @@ Reviewslist:
   reviewauthor: 'Marius Mann'
   reviewimage:
     - 'file://mivmlymgavvgfprb'
--
-  reviewtext: aslkdfhdlsjkfhalkdsjfhlkadjh
-  reviewauthor: lkjsadhflkjadshfjkl
-  reviewimage:
-    - 'file://0wm9t8ksxv3hqbcj'
 
 ----
 
@@ -85,3 +80,7 @@ Subheadline: A fully documented example project
 ----
 
 Uuid: wljMYhm0m3e9QOwC
+
+----
+
+Lock: 7Uj1CFrf

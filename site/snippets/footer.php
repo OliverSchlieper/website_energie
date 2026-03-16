@@ -11,44 +11,39 @@
 ?>
   </main>
 
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-info">
-        <h3><?= $site->footerHeadline()->or('Kontakt & Infos')->esc() ?></h3>
-        <?php if ($site->footerText()->isNotEmpty()): ?>
-          <div class="footer-text">
-            <?= $site->footerText()->kt() ?>
-          </div>
-        <?php endif ?>
+  <footer id="footer" class="ct-section">
+    <div class="ct-section-inner-wrap">
+      <div id="new_columns-30-14" class="ct-new-columns">
+        <div id="div_block-31-14" class="ct-div-block">
+          <a id="link-120-14" class="ct-link" href="https://hm.edu" target="_blank">
+            <div id="text_block-24-14" class="ct-text-block">
+              <span id="span-25-14" class="ct-span" data-ninja-font="untitled-sans-web_regular_normal_vw50a">Hochschule München ©<?= date('Y') ?></span>
+            </div>
+          </a>
+          <nav id="_nav_menu-29-14" class="oxy-nav-menu bottom-nav-menu oxy-nav-menu-dropdowns oxy-nav-menu-dropdown-arrow">
+            <div class="oxy-menu-toggle">
+              <div class="oxy-nav-menu-hamburger-wrap">
+                <div class="oxy-nav-menu-hamburger">
+                  <div class="oxy-nav-menu-hamburger-line"></div>
+                  <div class="oxy-nav-menu-hamburger-line"></div>
+                  <div class="oxy-nav-menu-hamburger-line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-fusszeile-container">
+              <ul id="menu-fusszeile" class="oxy-nav-menu-list">
+                <li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23">
+                  <a href="<?= $site->url() ?>/impressum/" data-ninja-font="untitled-sans-web_regular_normal_vw50a">Impressum</a>
+                </li>
+                <li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24">
+                  <a href="<?= $site->url() ?>/datenschutz/" data-ninja-font="untitled-sans-web_regular_normal_vw50a">Datenschutz</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div id="div_block-32-14" class="ct-div-block"></div>
       </div>
-
-      <?php $links = $site->footerLinks()->toStructure(); ?>
-      <?php if ($links->isNotEmpty()): ?>
-        <div class="footer-links">
-          <h3>Links</h3>
-          <ul>
-            <?php foreach ($links as $link): ?>
-              <li><a href="<?= $link->linkUrl() ?>"><?= $link->linkText()->esc() ?></a></li>
-            <?php endforeach ?>
-          </ul>
-        </div>
-      <?php endif ?>
-
-      <?php $socials = $site->socialLinks()->toStructure(); ?>
-      <?php if ($socials->isNotEmpty()): ?>
-        <div class="footer-social">
-          <h3>Social Media</h3>
-          <ul>
-            <?php foreach ($socials as $social): ?>
-              <li><a href="<?= $social->platformUrl() ?>" target="_blank" rel="noopener noreferrer"><?= $social->platformName()->esc() ?></a></li>
-            <?php endforeach ?>
-          </ul>
-        </div>
-      <?php endif ?>
-    </div>
-    
-    <div class="footer-bottom">
-      <p>&copy; <?= date('Y') ?> <?= $site->title()->esc() ?>. Alle Rechte vorbehalten.</p>
     </div>
   </footer>
 
