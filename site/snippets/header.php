@@ -27,7 +27,7 @@
     base URL of your site.
   */
   ?>
-  <link rel="shortcut icon" type="image/x-icon" href="<?= url('favicon.ico') ?>">
+  <link rel="shortcut icon" type="image/svg" href="<?= url('assets\icons\HM_Logo_rot_cube_RGB.svg') ?>">
 </head>
   <header class="header">
     <div class="header_container container">

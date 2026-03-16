@@ -23,9 +23,11 @@
 
         <article class="galerie">
             <figure>
+                <a href="assets/projekte/konrad-und-das-dokument-a38/index.html" class="project-link">
                 <div class="project-thumb">
                     <img class="figure-overlay" src="assets/img/figure1.svg" alt="">
                 </div>
+                </a>
                 <figcaption>
                     <p>Sabrina Kupka</p>
                     <h3>Konrad und das Dokument A38 </h3>
@@ -34,9 +36,11 @@
                 </figcaption>
             </figure>
             <figure>
+                <a href="assets/projekte/energie-sparen/index.html" class="project-link">
                 <div class="project-thumb">
                     <img class="figure-overlay" src="assets/img/figure2.svg" alt="">
                 </div>
+                </a>
                 <figcaption>
                     <p>Jakob Giggenbach</p>
                     <h3>Wer kann <span style="font-style: italic;">Energie</span> sparen?</h3>
@@ -48,9 +52,11 @@
                 </figcaption>
             </figure>
             <figure>
+                <a href="projekte/energie-im-alltag" class="project-link">
                 <div class="project-thumb">
                     <img class="figure-overlay" src="assets/img/figure3.svg" alt="">
                 </div>
+                </a>
                 <figcaption>
                     <p>Raphael Kast</p>
                     <h3>Energie im Alltag</h3>
@@ -62,9 +68,11 @@
                 </figcaption>
             </figure>
             <figure>
+                <a href="projekte/zukunfts-talk" class="project-link">
                 <div class="project-thumb">
                     <img class="figure-overlay" src="assets/img/figure4.svg" alt="">
                 </div>
+                </a>
                 <figcaption>
                     <p>Sarah Schmidt</p>
                     <h3>Zukunfts-Talk Harald Lesch & Christian Holler</h3>
@@ -74,9 +82,11 @@
                 </figcaption>
             </figure>
             <figure>
+                <a href="https://my.spline.design/ondraalinaschrder-msa0a6Is4LzZ8mMGQTOR2YYq/" class="project-link">
                 <div class="project-thumb">
                     <img class="figure-overlay" src="assets/img/figure5.svg" alt="">
                 </div>
+                </a>
                 <figcaption>
                     <p>Alina Schröder</p>
                     <h3>Ondra</h3>

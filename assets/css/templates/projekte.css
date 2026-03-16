@@ -48,6 +48,21 @@ body {
 
 /* ============ Links ========== */
 
+.project-link {
+    display: block;       /* Link füllt die Box */
+    text-decoration: none; /* keine Unterstreichung */
+}
+
+.project-link .project-thumb {
+    cursor: pointer;      /* zeigt an, dass es klickbar ist */
+    transition: transform 0.3s ease;
+}
+
+.project-link:hover .figure-overlay {
+    transform: scale(1.05); /* Bild vergrößert sich leicht */
+    transition: transform 0.3s ease; /* sanfte Animation */
+}
+
 a:link,
 a:visited {
     text-decoration: none;
@@ -109,12 +124,12 @@ a.current {
 .project-thumb .figure-overlay {
     position: absolute;
     bottom: 0;           /* am unteren Rand der Box */
-    left: 50%;           /* horizontal zentrieren */
-    transform: translateX(-50%);
-    width: 80%;          /* Breite des Bildes, anpassbar */
-    height: auto;
+    transform-origin: center bottom; /* Skalierung von der Mitte unten aus */
+    height: 95%; 
+    width: auto;
     object-fit: contain; /* Bild bleibt proportional */
-    max-height: 100%;
+    transition: transform 0.3s ease; /* sanfte Animation */
+    display: block;
 }
 
 /* Absatzformatierung */
