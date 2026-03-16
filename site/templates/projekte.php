@@ -23,7 +23,9 @@
 
         <article class="galerie">
             <figure>
-                <div class="project-thumb"></div>
+                <div class="project-thumb">
+                    <img class="figure-overlay" src="assets/img/figur1.png" alt="">
+                </div>
                 <figcaption>
                     <p>Sabrina Kupka</p>
                     <h3>Konrad und das Dokument A38 </h3>
