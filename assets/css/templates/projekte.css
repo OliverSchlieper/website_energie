@@ -86,8 +86,8 @@ a.current {
 /* ============ main ========== */
 
 main {
-    width: var(--inhaltBreite);
-    padding: var(--inhaltPadding);
+    width: var(--container-width);
+    padding: var(--container-padding);
     margin: 100px auto;
 }
 
@@ -95,7 +95,7 @@ main {
     /* outline: 1px solid green; */
     display: grid;
     gap: 60px 16px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
 
     p + p {
         text-indent: 1.5rem;
@@ -115,4 +115,40 @@ main {
         border-right: 1px solid rgba(0, 0, 0, 0.5);
         padding-right: 16px;
     }
+}
+
+.galerie figcaption p{
+  max-width: 60ch;
+}
+
+@media (max-width: 900px) {
+
+  .content-grid{
+    grid-template-columns: 1fr;
+    gap: var(--space-l);
+  }
+
+  .content-grid .intro p{
+    max-width: 60ch;
+  }
+
+}
+@media (max-width: 700px) {
+
+  .galerie figure{
+    border-right: none;
+    padding-right: 0;
+  }
+
+}
+@media (max-width: 600px) {
+
+  .galerie{
+    gap: 40px 12px;
+  }
+
+  .project-thumb{
+    margin-bottom: var(--space-s);
+  }
+
 }
