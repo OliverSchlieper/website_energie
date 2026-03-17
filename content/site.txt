@@ -10,16 +10,8 @@ Footertext: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam no
 
 ----
 
-Footerlinks:
-
--
-  linktext: Hugendubel
-  linkurl: 'https://www.hugendubel.de/de'
+Footerlinks: []
 
 ----
 
-Sociallinks:
-
--
-  platformname: Instagram
-  platformurl: 'https://www.instagram.com/'
+Sociallinks: []

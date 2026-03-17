@@ -37,6 +37,9 @@ columns:
             label: Rezensionen hinzufügen
             type: structure
             fields:
+              reviewTitle:
+                label: Titel / Quelle (z.B. "5 Sterne – Amazon")
+                type: text
               reviewText:
                 label: Zitat / Text
                 type: textarea
@@ -47,12 +50,6 @@ columns:
               reviewAuthor:
                 label: Autor / Medium
                 type: text
-              reviewImage:
-                label: Foto der Person
-                type: files
-                max: 1
-                layout: cards
-                multiple: false
       
       aboutBookSection:
         type: fields
