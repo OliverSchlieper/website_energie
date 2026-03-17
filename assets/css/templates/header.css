@@ -126,10 +126,8 @@
 
 @media (max-width: 768px) {
     :root {
-        --container-padding: 0 4px;
-        /* reduce padding on small screens */
-        --container-width: 100%;
-        /* make the container wider, closer to edges */
+        --container-padding: 0 8px;
+        /* matches header mobile padding */
     }
 
     .menu-toggle {
