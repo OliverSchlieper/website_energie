@@ -40,7 +40,7 @@
 /* Die Karte mit dem pinken Schatten und Animation */
 .author-card {
   display: grid;
-  grid-template-columns: 1fr 1.6fr;
+  grid-template-columns: 1fr; /* Mobile: stacked */
   background: var(--color-background);
   border: 3px solid var(--color-black);
   box-shadow: 25px 25px 0px #e6cfe6; /* Pinker Schatten */
@@ -51,24 +51,41 @@
   position: relative;
 }
 
+@media (min-width: 700px) {
+  .author-card {
+    grid-template-columns: 1fr 1.6fr; /* Desktop: Bild links, Text rechts */
+  }
+}
+
 .author-card:hover {
   transform: translate(-10px, -10px);
   box-shadow: 35px 35px 0px #e6cfe6;
 }
 
 .author-image {
-  border-right: 3px solid var(--color-black);
-  position: relative; /* Container for absolute image if needed, or just flex */
+  border-bottom: 3px solid var(--color-black); /* Mobile: Linie unterm Bild */
+  border-right: none;
+  position: relative;
   display: flex;
+  max-height: 320px; /* Mobile: Bild nicht zu hoch */
+  overflow: hidden;
+}
+
+@media (min-width: 700px) {
+  .author-image {
+    border-bottom: none;
+    border-right: 3px solid var(--color-black);
+    max-height: none; /* Desktop: volle Höhe */
+  }
 }
 
 .author-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures image fills the container without squishing */
-  object-position: center top; /* Focus on the face */
+  object-fit: cover;
+  object-position: center 20%; /* Fokus auf Gesicht, nicht oberer Rand */
   display: block;
-  min-height: 350px; /* Give it a minimum height so it doesn't get squished if text is very short */
+  min-height: 250px;
 }
 
 .author-details {

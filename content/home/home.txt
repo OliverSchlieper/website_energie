@@ -23,13 +23,13 @@ Reviewslist:
 -
   reviewtext: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et'
   reviewauthor: 'Marius Mann'
+  reviewtitle: '5 Sterne - Bestes Buch'
   reviewimage:
     - 'file://mivmlymgavvgfprb'
 -
-  reviewtext: aslkdfhdlsjkfhalkdsjfhlkadjh
-  reviewauthor: lkjsadhflkjadshfjkl
-  reviewimage:
-    - 'file://0wm9t8ksxv3hqbcj'
+  reviewtext: fsadfadskfjhadsökfjhasdjkfhalsk.
+  reviewauthor: asdfasdfad
+  reviewtitle: asdfadsfsa
 
 ----
 

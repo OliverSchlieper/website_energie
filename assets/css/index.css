@@ -10,7 +10,7 @@
 @font-face {
   font-family: 'UntitledSans';
   src: url('../fonts/UntitledSans-Regular.woff2') format('woff2'),
-       url('../fonts/UntitledSans-Regular.woff') format('woff');
+    url('../fonts/UntitledSans-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -20,7 +20,7 @@
 @font-face {
   font-family: 'UntitledSans';
   src: url('../fonts/UntitledSans-Medium.woff2') format('woff2'),
-       url('../fonts/UntitledSans-Medium.woff') format('woff');
+    url('../fonts/UntitledSans-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -30,7 +30,7 @@
 @font-face {
   font-family: 'UntitledSans';
   src: url('../fonts/UntitledSans-Light.woff2') format('woff2'),
-       url('../fonts/UntitledSans-Light.woff') format('woff');
+    url('../fonts/UntitledSans-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -40,7 +40,7 @@
 @font-face {
   font-family: 'UntitledSans';
   src: url('../fonts/UntitledSans-Bold.woff2') format('woff2'),
-       url('../fonts/UntitledSans-Bold.woff') format('woff');
+    url('../fonts/UntitledSans-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -50,7 +50,7 @@
 @font-face {
   font-family: 'UntitledSans';
   src: url('../fonts/UntitledSans-RegularItalic.woff2') format('woff2'),
-       url('../fonts/UntitledSans-RegularItalic.woff') format('woff');
+    url('../fonts/UntitledSans-RegularItalic.woff') format('woff');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -64,7 +64,7 @@
 @font-face {
   font-family: 'UntitledSerif';
   src: url('../fonts/UntitledSerif-Regular.woff2') format('woff2'),
-       url('../fonts/UntitledSerif-Regular.woff') format('woff');
+    url('../fonts/UntitledSerif-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -74,7 +74,7 @@
 @font-face {
   font-family: 'UntitledSerif';
   src: url('../fonts/UntitledSerif-Medium.woff2') format('woff2'),
-       url('../fonts/UntitledSerif-Medium.woff') format('woff');
+    url('../fonts/UntitledSerif-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -84,7 +84,7 @@
 @font-face {
   font-family: 'UntitledSerif';
   src: url('../fonts/UntitledSerif-Bold.woff2') format('woff2'),
-       url('../fonts/UntitledSerif-Bold.woff') format('woff');
+    url('../fonts/UntitledSerif-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -99,15 +99,15 @@
   --hm-red: #FC5555;
   --color-text: var(--color-black);
   --color-background: var(--color-white);
-  --color-code-grey:        #C7CDD1;
-  --color-code-dark-grey:   #9BA1A4;
-  --color-code-light-grey:  #E4E8EB;
-  --color-code-darkred:     #8C6270;
-  --color-code-red:         #E26F6A;
-  --color-code-pink:        #DBBFCE;
-  --color-code-purple:      #817BB7;
-  --color-code-green:       #54896D;
-  --color-code-yellow:      #D7D7AE;
+  --color-code-grey: #C7CDD1;
+  --color-code-dark-grey: #9BA1A4;
+  --color-code-light-grey: #E4E8EB;
+  --color-code-darkred: #8C6270;
+  --color-code-red: #E26F6A;
+  --color-code-pink: #DBBFCE;
+  --color-code-purple: #817BB7;
+  --color-code-green: #54896D;
+  --color-code-yellow: #D7D7AE;
   --font-family-sans: 'UntitledSans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-mono: 'UntitledSerif', "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 
@@ -165,6 +165,7 @@ p {
   line-height: 1.6;
   margin-bottom: var(--space-m);
 }
+
 p:last-child {
   margin-bottom: 0;
 }
@@ -176,10 +177,12 @@ img {
 li {
   list-style: none;
 }
+
 a {
   color: currentColor;
   text-decoration: none;
 }
+
 button {
   font: inherit;
   background: none;
@@ -187,9 +190,12 @@ button {
   color: currentColor;
   cursor: pointer;
 }
-strong, b {
+
+strong,
+b {
   font-weight: 600;
 }
+
 small {
   font-size: inherit;
   color: var(--color-text-grey);
@@ -198,12 +204,13 @@ small {
 .bg-light {
   background-color: var(--color-light);
 }
+
 .color-grey {
   color: var(--color-text-grey);
 }
 
 main {
-    padding-top: 100px;
+  padding-top: 100px;
 }
 
 .container {
@@ -219,7 +226,8 @@ main {
   grid-gap: var(--gutter);
   grid-template-columns: 1fr;
 }
-.grid > .column {
+
+.grid>.column {
   margin-bottom: var(--gutter);
 }
 
@@ -271,6 +279,7 @@ hr {
   padding-bottom: calc(100% / var(--w) * var(--h));
   background: var(--color-black);
 }
+
 .img img,
 .video iframe {
   position: absolute;
@@ -283,9 +292,11 @@ hr {
   object-fit: cover;
   border: 0;
 }
+
 .img[data-contain] img {
   object-fit: contain;
 }
+
 .img-caption,
 .video-caption {
   padding-top: .75rem;
@@ -303,7 +314,7 @@ hr {
 
 
 
-#footer > .ct-section-inner-wrap {
+#footer>.ct-section-inner-wrap {
   padding-top: 12px;
   padding-right: 0;
   padding-bottom: 12px;
@@ -407,19 +418,24 @@ hr {
     gap: 4px;
     width: 100% !important;
   }
+
   #new_columns-30-14 {
     flex-direction: column;
   }
+
   #text_block-24-14 {
     font-size: 14px;
   }
+
   #_nav_menu-29-14 {
     margin-left: 0px;
   }
+
   .oxy-nav-menu-list li.menu-item {
     font-size: 14px;
     line-height: 18.2px;
   }
+
   #_nav_menu-29-14 .menu-item a {
     font-size: 14px !important;
   }

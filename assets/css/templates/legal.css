@@ -1,0 +1,44 @@
+/* ========================================= */
+/* Legal Pages (Datenschutz & Impressum)     */
+/* ========================================= */
+
+.legal-page {
+  /* Push text down below the fixed header */
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+.legal-content h1 {
+  margin-bottom: 30px;
+  /* Use the universal typography from index.css */
+}
+
+.legal-section-text {
+  /* Let text span full width as requested */
+}
+
+.legal-sections h3 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  /* Universal h3 typography automatically applied */
+}
+
+.legal-sections p,
+.legal-sections ul,
+.legal-sections li {
+  /* Inherit standard body text size from universal styles */
+  margin-bottom: 1em;
+}
+
+.legal-sections hr {
+  margin: 40px 0;
+  border: none;
+  border-top: 2px solid #000; 
+  opacity: 1; /* Solid black lines */
+  width: 100%; /* Force lines to span the full container width */
+}
+
+.legal-sections a {
+  /* Let index.css style the links, just enforce underline */
+  text-decoration: underline;
+}
