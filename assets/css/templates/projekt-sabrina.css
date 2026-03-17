@@ -1,7 +1,11 @@
+/* ------------------------------
+   Title Bar
+--------------------------------*/
+
 .title-bar {
   width: 100%;
   background: var(--color-code-darkred);
-  padding: 20rem 0 1rem 0; 
+  padding: 20rem 0 1rem 0;
   display: flex;
   align-items: flex-end;
   margin-bottom: var(--space-l);
@@ -12,6 +16,7 @@
   color: var(--color-white);
   margin: 0;
 }
+
 /* Author */
 
 .project-author{
@@ -36,7 +41,7 @@
   line-height: 1.35;
   margin-bottom: var(--space-m);
   font-weight: 400;
-  max-width: 60ch;
+  max-width: 58ch;
 }
 
 .content-grid .credits p{
@@ -45,38 +50,86 @@
   margin-bottom: var(--space-m);
 }
 
+.divider{
+  border-bottom: 1px solid var(--color-black);
+  margin-bottom: var(--space-l);
+}
 
+.divider h2{
+  font-size: clamp(1.8rem, 3vw, 2.75rem);
+  line-height: clamp(1.35, 1.1vw, 1.2);;
+  max-width: 25ch;
+  margin-bottom: var(--space-m);
+}
 /* ------------------------------
-   Link Grid (Text + Bild)
+   Link Grid (Button + Bild)
 --------------------------------*/
+.linktext h2{
+  font-size: clamp(1.8rem, 3vw, 2.75rem);
+  max-width: 25ch;
+  margin-bottom: var(--space-m);
+}
 
-.link-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: center;
+.link{
   margin-bottom: var(--space-xl);
 }
 
+.link-grid{
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 3rem;
+  align-items: start;
+}
 
-/* Text im Linkbereich */
 
-.linktext h2{
-  font-size: clamp(1.4rem, 2vw, 1.8rem);
-  line-height: 1.2;
-  max-width: 25ch;
+/* Text */
+
+.linktext {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+
+/* Button */
+
+.project-button{
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .7rem 1.4rem;
+  border: 1px solid var(--color-black);
+  color: var(--color-black);
+  text-decoration: none;
+  font-weight: 400;
+  transition: background .2s ease, transform .2s ease;
+}
+
+.project-button:hover{
+  background: var(--color-code-darkred);
+  transform: translateY(-2px);
+  color: var(--color-white);
 }
 
 
 /* Bild / Thumb */
 
 .project-thumb{
+  display: block;
   width: 100%;
-  height: auto;
-  position: relative;
   overflow: hidden;
 }
 
+.project-thumb img{
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform .35s ease;
+}
+
+.project-thumb:hover img{
+  transform: scale(1.05);
+}
 
 
 /* ------------------------------

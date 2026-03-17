@@ -28,7 +28,10 @@
     </div>
 
   </div>
-
+  
+  <div class="divider">  
+    <h2>Zum Hörspiel</h2>
+  </div>
 
   <!-- Link Bereich -->
 
@@ -36,17 +39,21 @@
 
     <div class="link-grid">
 
+      <!-- Button / Text -->
       <div class="linktext">
-        <h2>Zum Hörspiel</h2>
+
+        <a href="<?= url('assets/projekte/konrad-und-das-dokument-a38/index.html') ?>" class="project-button">
+          Jetzt anhören
+        </a>
       </div>
-    <div>
-      <a href="<?= url('assets/projekte/konrad-und-das-dokument-a38/index.html') ?>" class="project-link">
 
-        <div class="project-thumb">
-          <img src="<?= $page->url() ?>/sabrina-screenshot.png" alt="">
-        </div>
-
+      <!-- Klickbares Bild -->
+      <a href="<?= url('assets/projekte/konrad-und-das-dokument-a38/index.html') ?>" class="project-thumb">
+        <?php if($image = $page->image()): ?>
+          <img src="<?= $image->url() ?>" alt="">
+        <?php endif ?>
       </a>
+
     </div>
 
   </div>
