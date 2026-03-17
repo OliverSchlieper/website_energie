@@ -71,9 +71,9 @@
               <?php foreach ($reviewsList as $index => $review): ?>
                 <div class="review-slide <?= $index === 0 ? 'active' : '' ?>">
                   <blockquote class="review-card">
-                    <?php if ($reviewImg = $review->reviewImage()->toFile()): ?>
-                      <div class="review-image">
-                        <img src="<?= $reviewImg->crop(200, 200)->url() ?>" alt="Foto von <?= $review->reviewAuthor()->esc() ?>">
+                    <?php if ($review->reviewTitle()->isNotEmpty()): ?>
+                      <div class="review-title">
+                        <?= $review->reviewTitle()->esc() ?>
                       </div>
                     <?php endif ?>
                     

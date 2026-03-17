@@ -34,7 +34,7 @@
   <link rel="shortcut icon" type="image/svg" href="<?= url('assets\icons\HM_Logo_rot_cube_RGB.svg') ?>">
 </head>
 <header class="header">
-  <div class="header_container container">
+  <div class="header_container">
     <a class="logo" href="https://hm.edu/">
       <img src="<?= url('assets/icons/HM_Logo_rot_cube_RGB.svg')?>" alt="Hochschule München" />
     </a>
