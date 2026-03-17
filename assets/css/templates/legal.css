@@ -39,6 +39,10 @@
 }
 
 .legal-sections a {
-  /* Let index.css style the links, just enforce underline */
+  color: #0074db;
   text-decoration: underline;
+}
+
+.legal-sections a:hover {
+  color: #005bb5;
 }
