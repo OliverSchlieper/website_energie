@@ -6,7 +6,7 @@ Pageheadline: Über Uns
 
 ----
 
-Pageintro: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Pageintro: Dieses freie Projekt entstand an der Hochschule München unter der Leitung von Prof. Matthias Edler-Golla. Besonders spannend war für uns die Reise durch den gesamten Designprozess: Zu erleben, wie sich Konzepte über die Monate hinweg weiterentwickeln und schließlich zu einer fertigen Lösung formen, war eine wertvolle Erfahrung.
 
 ----
 
@@ -18,11 +18,14 @@ Person1role: Developer
 
 ----
 
-Person1bio: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Person1bio:
+
+Informatik & Design @ MucDAI
+Mein Fokus liegt auf UI/UX-Design und Frontend-Entwicklung. Ich liebe die Arbeit in Figma und schätze das Kirby CMS für clevere Lösungen. Privat bin ich am liebsten beim Wandern in der Natur oder beim Mitfiebern mit Eintracht Frankfurt unterwegs.
 
 ----
 
-Person1image: - 'file://gpl2egibhbzmcdzz'
+Person1image: - 'file://mwzbmoz8wbtqkqoz'
 
 ----
 
@@ -42,19 +45,22 @@ Person2role: Developer
 
 ----
 
-Person2bio: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Person2bio:
+
+Ich studiere Informatik und Design an der Hochschule München. Dabei liegt mein Fokus gehören Illustration und UI-/UX-Design.
+In meiner Freizeit findet ihr mich auf dem Track beim Roller Derby (ein Team- und Kontaktsport auf Rollschuhen) oder beim zeichnen und gestalten persönlicher Kreativprojekte
 
 ----
 
-Person2image: - 'file://2j3dvlvzjih3eixs'
+Person2image: - 'file://bbfbjjxnbrdh85bw'
 
 ----
 
-Person2email: ash@email.com
+Person2email: zhou@hm.edu
 
 ----
 
-Person2link: https://www.pokemon.de
+Person2link: https://www.instagram.com/ashketchup_22
 
 ----
 
