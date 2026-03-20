@@ -17,9 +17,9 @@
   font-weight: 400 !important; /* UntitledSans Regular */
   text-transform: uppercase;
   color: #333333;
-  
+
   /* Pinker Balken links */
-  border-left: 20px solid #e6cfe6; 
+  border-left: 20px solid #e6cfe6;
   padding-left: 25px;
   margin-bottom: 80px;
 }
@@ -44,10 +44,11 @@
   background: var(--color-background);
   border: 3px solid var(--color-black);
   box-shadow: 25px 25px 0px #e6cfe6; /* Pinker Schatten */
-  
+
   /* Animation */
-  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
-              box-shadow 0.2s ease;
+  transition:
+    transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    box-shadow 0.2s ease;
   position: relative;
 }
 
@@ -57,9 +58,10 @@
   }
 }
 
+/* matthias */
 .author-card:hover {
-  transform: translate(-10px, -10px);
-  box-shadow: 35px 35px 0px #e6cfe6;
+  /* transform: translate(-10px, -10px);
+  box-shadow: 35px 35px 0px #e6cfe6; */
 }
 
 .author-image {
@@ -143,10 +145,18 @@
 }
 
 /* Mobile Fix */
-@media (max-width: 1099px) { /* Trigger standard card layout slightly earlier so it breaks gracefully */
-  .author-card { grid-template-columns: 1fr; }
-  .section-header h1 { font-size: 40px; }
-  .author-image { border-right: none; border-bottom: 3px solid var(--color-black); }
+@media (max-width: 1099px) {
+  /* Trigger standard card layout slightly earlier so it breaks gracefully */
+  .author-card {
+    grid-template-columns: 1fr;
+  }
+  .section-header h1 {
+    font-size: 40px;
+  }
+  .author-image {
+    border-right: none;
+    border-bottom: 3px solid var(--color-black);
+  }
   .author-image img {
     aspect-ratio: 16/9; /* Make it more landscape-ish on mobile if stacked */
     min-height: auto;

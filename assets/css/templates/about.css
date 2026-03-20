@@ -45,13 +45,15 @@
   grid-template-columns: 1fr;
   border: 3px solid var(--color-black);
   box-shadow: 20px 20px 0px #e6cfe6;
-  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-              box-shadow 0.2s ease;
+  transition:
+    transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    box-shadow 0.2s ease;
 }
 
 .person-card:hover {
-  transform: translate(-8px, -8px);
-  box-shadow: 30px 30px 0px #e6cfe6;
+  /* matthias */
+  /* transform: translate(-8px, -8px);
+  box-shadow: 30px 30px 0px #e6cfe6; */
 }
 
 /* Image left layout */
@@ -193,8 +195,8 @@
 
 .person-link:hover {
   border-bottom-color: var(--color-black);
-  color: #FC5555;
-  border-bottom-color: #FC5555;
+  color: #fc5555;
+  border-bottom-color: #fc5555;
 }
 
 /* Mobile */

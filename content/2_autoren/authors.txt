@@ -11,38 +11,69 @@ Authors-list:
 -
   name: 'Christian Holler'
   role: Autor
-  bio: 'Christian Holler ist Professor für Ingenieurmathematik an der Fakultät für angewandte Naturwissenschaften und Mechatronik an der Hochschule München. Zuvor wurde er in experimenteller Astrophysik an der Universität Cambridge promoviert und hat später zu diesen Themen in Oxford geforscht. Seit vielen Jahren beschäftigt er sich intensiv mit erneuerbaren Energien und der gesellschaftlichen Diskussion dazu. Seit 2021 ist er zudem Professor für innovative Lehre, um den interdisziplinären Schwerpunkt Nachhaltigkeit weiter auszubauen und neue Lehrangebote zu schaffen.'
+  bio: |-
+    Christian Holler ist Professor für Ingenieurmathematik an der Fakultät für angewandte Naturwissenschaften und Mechatronik an der Hochschule München. Zuvor wurde er in experimenteller Astrophysik an der Universität Cambridge promoviert und hat später zu diesen Themen in Oxford geforscht. 
+
+    Seit vielen Jahren beschäftigt er sich intensiv mit erneuerbaren Energien und der gesellschaftlichen Diskussion dazu. 
+
+    Seit 2021 ist er zudem Professor für innovative Lehre, um den interdisziplinären Schwerpunkt Nachhaltigkeit weiter auszubauen und neue Lehrangebote zu schaffen.
   email: holler@hm.edu
   image:
-    - 'file://dk6u9w2hkzvgxkem'
+    - 'file://p13g32pk1xkthumi'
 -
   name: 'Joachim Guakel'
   role: Autor
-  bio: 'Joachim Gaukel ist Mathematiker mit Stationen in Stuttgart und Darmstadt. Nach einigen Jahren in der Versicherungsbranche ist er seit über fünfzehn Jahren Professor an der Hochschule Esslingen. Neben Vorlesungen zur Mathematik hält er auch Vorlesungen über erneuerbare Energien. Ein nachhaltiger Lebensstil ist ihm schon immer ein Anliegen gewesen. Zu Hause auf dem Dach befindet sich seit Langem eine Photovoltaik- und Solarthermie-Anlage. Und für seinen Weg zur Arbeit und auch sonst so oft wie möglich nutzt er zeitlebens öffentliche Verkehrsmittel oder das Fahrrad, mit dem er jährlich über 5000 Kilometer zurücklegt.'
+  bio: |-
+    Joachim Gaukel ist Mathematiker mit Stationen in Stuttgart und Darmstadt. Nach einigen Jahren in der Versicherungsbranche ist er seit über fünfzehn Jahren Professor an der Hochschule Esslingen. 
+
+    Neben Vorlesungen zur Mathematik hält er auch Vorlesungen über erneuerbare Energien. 
+
+    Ein nachhaltiger Lebensstil ist ihm schon immer ein Anliegen gewesen. Zu Hause auf dem Dach befindet sich seit Langem eine Photovoltaik- und Solarthermie-Anlage. 
+
+    Und für seinen Weg zur Arbeit und auch sonst so oft wie möglich nutzt er zeitlebens öffentliche Verkehrsmittel oder das Fahrrad, mit dem er jährlich über 5000 Kilometer zurücklegt.
   email: Joachim.Gaukel@hs-esslingen.de
   image:
-    - 'file://z29pduzrni5lvymi'
+    - 'file://z43u88hna2g6yvbp'
 -
   name: 'Harald Lesch'
   role: Autor
-  bio: 'Harald Lesch ist Professor für theoretische Astrophysik an der Ludwig-Maximilians-Universität München und einer der bekanntesten Naturwissenschaftler Deutschlands. Er vermittelt seit vielen Jahren der breiten Öffentlichkeit in populären Formaten naturwissenschaftliches Wissen. Er hat zahlreiche Bücher veröffentlicht, in denen er sich neben vielen weiteren Themen intensiv mit unserer Welt von morgen auseinandersetzt. Im ZDF moderiert er unter anderem die beliebte Sendung „Leschs Kosmos“.'
+  bio: |-
+    Harald Lesch ist Professor für theoretische Astrophysik an der Ludwig-Maximilians-Universität München und einer der bekanntesten Naturwissenschaftler Deutschlands. 
+
+    Er vermittelt seit vielen Jahren der breiten Öffentlichkeit in populären Formaten naturwissenschaftliches Wissen. Er hat zahlreiche Bücher veröffentlicht, in denen er sich neben vielen weiteren Themen intensiv mit unserer Welt von morgen auseinandersetzt. 
+
+    Im ZDF moderiert er unter anderem die beliebte Sendung „Leschs Kosmos“.
   email: ''
   image:
-    - 'file://v6h4kxkrc4fhac88'
+    - 'file://4rnt8iaemeasuiyi'
 -
   name: 'Axel Kleidon'
   role: Autor
-  bio: 'Axel Kleidon ist Physiker und Klimaforscher am Max-Planck-Institut für Biogeochemie und lehrt regelmäßig an der Friedrich-Schiller-Universität in Jena. Er erforscht, wie das Erdsystem Energie umwandelt, wo die Grenzen dieser Prozesse liegen und was dies für Klima und die Nutzung erneuerbarer Energien bedeutet. Mit thermodynamischen Konzepten entwickelt er grundlegende Abschätzungen und vermittelt seine Erkenntnisse in wissenschaftlichen Publikationen, Vorträgen und populärwissenschaftlichen Formaten einer breiten Öffentlichkeit. Mehr zu seiner Forschungstätigkeit auf (link: https://earthsystem.org text: earthsystem.org target: _blank).'
+  bio: |-
+    Axel Kleidon ist Physiker und Klimaforscher am Max-Planck-Institut für Biogeochemie und lehrt regelmäßig an der Friedrich-Schiller-Universität in Jena. 
+
+    Er erforscht, wie das Erdsystem Energie umwandelt, wo die Grenzen dieser Prozesse liegen und was dies für Klima und die Nutzung erneuerbarer Energien bedeutet. Mit thermodynamischen Konzepten entwickelt er grundlegende Abschätzungen und vermittelt seine Erkenntnisse in wissenschaftlichen Publikationen, Vorträgen und populärwissenschaftlichen Formaten einer breiten Öffentlichkeit. 
+
+    Mehr zu seiner Forschungstätigkeit auf (link: https://earthsystem.org text: earthsystem.org target: _blank).
   email: axel.kleidon@bgc-jena.mpg.de
   image:
-    - 'file://zobxza7q8jffwlo3'
+    - 'file://n17u4isggzbkvgqu'
 -
   name: 'Charlotte Kelschenbach'
   role: Designerin
-  bio: 'Charlotte Kelschenbach ist freiberufliche Illustratorin mit Fokus auf Editorial und Corporate Design. Außer für eigene Publikationen arbeitete sie unter anderem mit Kunden wie Faber-Castell, Vodafone und der Bundeszentrale für politische Bildung zusammen. Ihr besonderes Interesse gilt der visuellen Vermittlung komplexer Inhalte mit dem Ziel, Informationen einfach und spielerisch zugänglich zu machen. Ihre Fertigkeiten vertieft sie derzeit in einem Masterstudium mit dem Schwerpunkt Wissenschaftsillustration an der HAW Hamburg. Mehr zu ihrer Arbeit unter (link: http://charlottekelschenbach.de text: charlottekelschenbach.de target: _blank).'
+  bio: |-
+    Charlotte Kelschenbach ist freiberufliche Illustratorin mit Fokus auf Editorial und Corporate Design. 
+
+    Außer für eigene Publikationen arbeitete sie unter anderem mit Kunden wie Faber-Castell, Vodafone und der Bundeszentrale für politische Bildung zusammen. 
+
+    Ihr besonderes Interesse gilt der visuellen Vermittlung komplexer Inhalte mit dem Ziel, Informationen einfach und spielerisch zugänglich zu machen. 
+
+    Ihre Fertigkeiten vertieft sie derzeit in einem Masterstudium mit dem Schwerpunkt Wissenschaftsillustration an der HAW Hamburg. 
+
+    Mehr zu ihrer Arbeit unter (link: http://charlottekelschenbach.de text: charlottekelschenbach.de target: _blank).
   email: charlotte_kelschenbach@gmx.de
   image:
-    - 'file://qjv2efcxdozyqm0l'
+    - 'file://xbxgvsderlrje15b'
 
 ----
 

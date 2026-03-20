@@ -6,7 +6,7 @@
   --tile-radius: 0px; /* Brighter, harder look based on authors.css shadows */
   --tile-shadow: 20px 20px 0px #e6cfe6; /* Pinkish shadow matching the authors page */
   --tile-shadow-hover: 30px 30px 0px #e6cfe6;
-  --btn-bg: #FC5555; /* HM Red from index.css */
+  --btn-bg: #fc5555; /* HM Red from index.css */
   --btn-text: var(--color-white);
   --btn-hover-bg: #e04444;
 }
@@ -24,14 +24,21 @@
   background: var(--tile-bg);
   border: 3px solid var(--tile-border);
   box-shadow: var(--tile-shadow);
-  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s ease;
+  transition:
+    transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    box-shadow 0.2s ease;
   position: relative;
   overflow: hidden; /* Contains the image */
+
+  /* matthias */
+  width: 80%;
+  margin: 3vh auto;
 }
 
 .tile:hover {
-  transform: translate(-5px, -5px);
-  box-shadow: var(--tile-shadow-hover);
+  /* matthias */
+  /* transform: translate(-5px, -5px);
+  box-shadow: var(--tile-shadow-hover); */
 }
 
 /* --- Tile 1: Book Section (Split Layout) --- */
@@ -39,16 +46,16 @@
   display: grid;
   grid-template-columns: 1fr;
 }
-
-@media (min-width: 900px) {
+/* matthias: später umschalten */
+@media (min-width: 1100px) {
   .book-tile {
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 .book-tile-image {
   border-bottom: 3px solid var(--tile-border);
-  background: #f4f4f4; /* Subtle background if image doesn't fill */
+  background: #e3e3e3; /* Subtle background if image doesn't fill */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,8 +70,9 @@
 
 .book-tile-image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  /* height: 100%;
+  object-fit: cover; */
   display: block;
 }
 
@@ -76,7 +84,7 @@
 }
 
 .book-tile-content {
-  padding: 40px 30px;
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -84,7 +92,7 @@
 
 @media (min-width: 900px) {
   .book-tile-content {
-    padding: 60px 80px;
+    padding: 20px 40px;
   }
 }
 
@@ -181,18 +189,19 @@
 
 /* --- Tile 3: Projects Section --- */
 .projects-tile {
-  text-align: center;
+  /* matthias */
+  /* text-align: center; */
 }
 
 .projects-tile-content {
-  padding: 60px 30px;
-  max-width: 700px;
+  padding: 60px 40px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
 @media (min-width: 900px) {
   .projects-tile-content {
-    padding: 80px 60px;
+    padding: 80px 80px;
   }
 }
 
@@ -317,7 +326,7 @@
   padding: 0;
   background: var(--tile-bg);
   border: 3px solid var(--tile-border);
-  box-shadow: 10px 10px 0px #e6cfe6; 
+  box-shadow: 10px 10px 0px #e6cfe6;
   display: flex;
   flex-direction: column;
   transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -335,7 +344,7 @@
   text-transform: uppercase;
   color: #000;
   padding: 24px 40px 16px;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   width: 100%;
   display: block;
 }

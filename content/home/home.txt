@@ -2,20 +2,28 @@ Title: Home
 
 ----
 
-Bookheadline: Kommen Sie vorbei: Vorstellung des Buches und der studentischen Projekte
+Bookheadline: Vorstellung des Buches und der studentischen Projekte
 
 ----
 
 Bookintro:
 
-Am Montag, 13.04. stellen wir das Buch und die begleitenden studentischen Projekte vor. Kommen Sie doch vorbei zum Pavillon der Fakultät 12 in der Lothstr. 17, 80335 München. Start ist um 18:00 Uhr! Es wird Inputs von Harald Lesch und Studierenden der HM geben.
+Am Montag, 13.04. stellen wir das Buch und die begleitenden studentischen Projekte vor. 
 
+Start ist um 18:00 Uhr! 
 
-Energie Verstehen
+Kommen Sie doch vorbei zum (link: https://maps.app.goo.gl/vGZLXHU1uv3utzMLA text: Pavillon der Fakultät 12 in der Lothstr. 17, 80335 München.)
+
+Es wird Inputs von Harald Lesch und Studierenden der HM geben.
+
+#### Energie Verstehen
 
 Nach dem Bestseller „Erneuerbare Energien zum Verstehen und Mitreden“ nimmt sich das Autorenteam diesmal das Thema Energieverbrauch vor. Energie hält unser modernes Leben am Laufen. Kein Flugzeug kann fliegen und kein Haus ist im Winter warm ohne Energie. Nicht einmal Fahrräder gäbe es, weil die Produktion von Stahl und Gummi viel Energie erfordert. 
+
 Aber wie viel Energie benötigen wir eigentlich? Was sind die großen, was die kleinen Posten, in Industrie, Mobilität und privaten Haushalten? Was geschieht, wenn wir unser Energiesystem auf erneuerbare Energien umstellen? Müssen wir womöglich Energie einsparen? Wenn ja, würde dies funktionieren, ohne dass wir unsere Lebensstil ändern? 
+
 Wir begleiten in diesem Buch Familie Müller bei ihrer alltäglichen Energienutzung. Die Müllers möchten wissen, wie sich ihr Energieverbrauch zusammensetzt, mit welchen Maßnahmen sie Energie und Kosten sparen können und wie wirksam diese Maßnahmen jeweils sind. 
+
 Kommen Sie also mit auf eine Reise durch die Energiewelt, die sich in einem rasanten Wandel befindet, bei uns, aber auch weltweit. Erfahren Sie, welche Entwicklungen und Trends es gibt und welche Rolle neue Technologien wie E-Autos und Wärmepumpen spielen. Am Ende werden Sie das Thema Energie viel besser verstehen. Und können fundiert mitreden und mitentscheiden bei einem wichtigen Thema unserer Zeit.
 
 ----
@@ -53,9 +61,15 @@ Aboutheadline: Über das Buch
 
 Abouttext:
 
-Alles Wissenswerte über Energieverbrauch, Energiesparen und die Energiewelt von morgen
+**Alles Wissenswerte über Energieverbrauch, Energiesparen und die Energiewelt von morgen**
 
-Wie viel Energie benötigen wir eigentlich täglich und wofür – in der Industrie, im Verkehr und im privaten Haushalt? Am Beispiel einer vierköpfigen Familie veranschaulichen die Autoren unseren Energiebedarf und zeigen, wie die Energienutzung von morgen aussehen kann. Wie schaffen wir es, den Energiebedarf möglichst effizient zu decken, wenn wir auf fossile Brennstoffe verzichten wollen? Welche neuen Technologien helfen uns dabei? Das richtige Buch für alle, die mitdenken, mitreden und mitentscheiden wollen über unsere Energiewelt der Zukunft.
+Wie viel Energie benötigen wir eigentlich täglich und wofür – in der Industrie, im Verkehr und im privaten Haushalt? 
+
+Am Beispiel einer vierköpfigen Familie veranschaulichen die Autoren unseren Energiebedarf und zeigen, wie die Energienutzung von morgen aussehen kann. 
+
+Wie schaffen wir es, den Energiebedarf möglichst effizient zu decken, wenn wir auf fossile Brennstoffe verzichten wollen? Welche neuen Technologien helfen uns dabei? 
+
+Das richtige Buch für alle, die mitdenken, mitreden und mitentscheiden wollen über unsere Energiewelt der Zukunft.
 
 ----
 
@@ -101,7 +115,13 @@ Projectsheadline: Unsere Projekte: Energie neu erzählt
 
 ----
 
-Projectsintro: Was passiert, wenn Design auf Wissenschaft trifft? Inspiriert von Harald Leschs Standardwerk zum Energieverbrauch, haben Studierende der Fakultät für Design die Welt der Kilowattstunden in Geschichten verwandelt. Von der spannenden Detektivsuche nach einem Rotorblatt bis hin zum interaktiven Spiel über unsere gemeinsame Zukunft: Entdecke ein Kaleidoskop aus Filmen, Games und Porträts, die Energie greifbar machen.
+Projectsintro:
+
+**Was passiert, wenn Design auf Wissenschaft trifft?**
+
+Inspiriert von Harald Leschs Standardwerk zum Energieverbrauch, haben Studierende der Fakultät für Design die Welt der Kilowattstunden in Geschichten verwandelt. 
+
+Von der spannenden Detektivsuche nach einem Rotorblatt bis hin zum interaktiven Spiel über unsere gemeinsame Zukunft: Entdecke ein Kaleidoskop aus Filmen, Games und Porträts, die Energie greifbar machen.
 
 ----
 

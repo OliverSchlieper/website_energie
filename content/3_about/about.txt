@@ -6,7 +6,11 @@ Pageheadline: Über Uns
 
 ----
 
-Pageintro: Dieses freie Projekt entstand an der Hochschule München unter der Leitung von Prof. Matthias Edler-Golla. Besonders spannend war für uns die Reise durch den gesamten Designprozess: Zu erleben, wie sich Konzepte über die Monate hinweg weiterentwickeln und schließlich zu einer fertigen Lösung formen, war eine wertvolle Erfahrung.
+Pageintro:
+
+Dieses freie Projekt entstand an der Hochschule München unter der Leitung von Prof. Matthias Edler-Golla. 
+
+Besonders spannend war für uns die Reise durch den gesamten Designprozess: Zu erleben, wie sich Konzepte über die Monate hinweg weiterentwickeln und schließlich zu einer fertigen Lösung formen, war eine wertvolle Erfahrung.
 
 ----
 
@@ -21,11 +25,14 @@ Person1role: Developer
 Person1bio:
 
 Informatik & Design @ MucDAI
-Mein Fokus liegt auf UI/UX-Design und Frontend-Entwicklung. Ich liebe die Arbeit in Figma und schätze das Kirby CMS für clevere Lösungen. Privat bin ich am liebsten beim Wandern in der Natur oder beim Mitfiebern mit Eintracht Frankfurt unterwegs.
+
+Mein Fokus liegt auf UI/UX-Design und Frontend-Entwicklung. Ich liebe die Arbeit in Figma und schätze das Kirby CMS für clevere Lösungen. 
+
+Privat bin ich am liebsten beim Wandern in der Natur oder beim Mitfiebern mit Eintracht Frankfurt unterwegs.
 
 ----
 
-Person1image: - 'file://mwzbmoz8wbtqkqoz'
+Person1image: - 'file://0ceemr9npgicjlv3'
 
 ----
 
@@ -48,11 +55,12 @@ Person2role: Developer
 Person2bio:
 
 Ich studiere Informatik und Design an der Hochschule München. Dabei liegt mein Fokus gehören Illustration und UI-/UX-Design.
+
 In meiner Freizeit findet ihr mich auf dem Track beim Roller Derby (ein Team- und Kontaktsport auf Rollschuhen) oder beim zeichnen und gestalten persönlicher Kreativprojekte
 
 ----
 
-Person2image: - 'file://bbfbjjxnbrdh85bw'
+Person2image: - 'file://qxx5opigrure9fra'
 
 ----
 

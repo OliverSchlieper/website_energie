@@ -9,7 +9,7 @@
             <div class="intro">
                 <p>Energie ist ein Schlüsselthema unserer Zeit — für den Klimawandel, die Krisensicherheit und eine
                     nachhaltige Zukunft.</p>
-                <p>In Anlehnung an das Buch "Unser Energieverbrauch zum Verstehen und Mitreden“ * erarbeiteten
+                <p>In Anlehnung an das Buch „Unser Energieverbrauch zum Verstehen und Mitreden“* erarbeiteten
                     Studierende der Fakultät für Design eigene filmische Beiträge, ein Online-Spiel und ein Hörspiel zu
                     den Themen Energie, Energieverbrauch und Ressourcengerechtigkeit. Es entsteht ein Kaleidoskop aus
                     unterschiedlichen Geschichten, Ideen und Lebenseinstellungen.</p>
@@ -24,9 +24,9 @@
         <article class="galerie">
             <figure>
                 <a href="projekte/konrad-und-das-dokument-a38" class="project-link">
-                <div class="project-thumb">
-                    <img class="figure-overlay" src="assets/img/figure1.svg" alt="">
-                </div>
+                    <div class="project-thumb">
+                        <img class="figure-overlay" src="assets/img/figure1.svg" alt="">
+                    </div>
                 </a>
                 <figcaption>
                     <p>Sabrina Kupka</p>
@@ -37,9 +37,9 @@
             </figure>
             <figure>
                 <a href="assets/projekte/energie-sparen/index.html" class="project-link">
-                <div class="project-thumb">
-                    <img class="figure-overlay" src="assets/img/figure2.svg" alt="">
-                </div>
+                    <div class="project-thumb">
+                        <img class="figure-overlay" src="assets/img/figure2.svg" alt="">
+                    </div>
                 </a>
                 <figcaption>
                     <p>Jakob Giggenbach</p>
@@ -53,9 +53,9 @@
             </figure>
             <figure>
                 <a href="projekte/energie-im-alltag" class="project-link">
-                <div class="project-thumb">
-                    <img class="figure-overlay" src="assets/img/figure3.svg" alt="">
-                </div>
+                    <div class="project-thumb">
+                        <img class="figure-overlay" src="assets/img/figure3.svg" alt="">
+                    </div>
                 </a>
                 <figcaption>
                     <p>Raphael Kast</p>
@@ -69,9 +69,9 @@
             </figure>
             <figure>
                 <a href="projekte/zukunfts-talk" class="project-link">
-                <div class="project-thumb">
-                    <img class="figure-overlay" src="assets/img/figure4.svg" alt="">
-                </div>
+                    <div class="project-thumb">
+                        <img class="figure-overlay" src="assets/img/figure4.svg" alt="">
+                    </div>
                 </a>
                 <figcaption>
                     <p>Sarah Schmidt</p>
@@ -83,9 +83,9 @@
             </figure>
             <figure>
                 <a href="https://my.spline.design/ondraalinaschrder-msa0a6Is4LzZ8mMGQTOR2YYq/" class="project-link">
-                <div class="project-thumb">
-                    <img class="figure-overlay" src="assets/img/figure5.svg" alt="">
-                </div>
+                    <div class="project-thumb">
+                        <img class="figure-overlay" src="assets/img/figure5.svg" alt="">
+                    </div>
                 </a>
                 <figcaption>
                     <p>Alina Schröder</p>
