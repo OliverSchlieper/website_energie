@@ -54,9 +54,9 @@ Person2role: Developer
 
 Person2bio:
 
-Ich studiere Informatik und Design an der Hochschule München. Dabei liegt mein Fokus gehören Illustration und UI-/UX-Design.
+Ich studiere Informatik und Design an der Hochschule München. Dabei sind meine Stärken Illustration, UI-/UX-Design und Web.
 
-In meiner Freizeit findet ihr mich auf dem Track beim Roller Derby (ein Team- und Kontaktsport auf Rollschuhen) oder beim zeichnen und gestalten persönlicher Kreativprojekte
+In meiner Freizeit findet ihr mich auf dem Track beim Roller Derby (ein Team- und Kontaktsport auf Rollschuhen) oder beim Zeichnen und Gestalten persönlicher Kreativprojekte
 
 ----
 
