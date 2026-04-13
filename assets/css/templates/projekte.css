@@ -171,6 +171,42 @@ a.current {
   max-width: 60ch;
 }
 
+/* ============ Animationen ========== */
+
+.animationen {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-l);
+}
+
+.animationen-header {
+  margin-bottom: var(--space-l);
+}
+
+.animation-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px 16px;
+}
+
+.animation-item video {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.animation-credit {
+  font-size: 16px;
+  line-height: 1;
+  color: #444;
+}
+
+@media (max-width: 899px) {
+  .animation-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ============ Responsive ========== */
 
 @media (max-width: 900px) {

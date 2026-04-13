@@ -97,6 +97,43 @@
                 </figcaption>
             </figure>
         </article>
+
+        <section class="animationen">
+            <h2>Animierte Infografiken</h2>
+            <div class="animationen-header content-grid">
+                
+                <div class="intro">
+                    <p>Im Rahmen des Kurses "Animation Basics" (Sommersemester 2025) von Prof. Stephan Rether haben die Studierenden die Illustrationen von Charlotte Kelschenbach aus dem neuen Buch "Unser Energieverbrauch zum Verstehen und Mitreden" mit After Effects zum Leben erweckt. Dabei entstanden sieben animierte Infografiken, die komplexe Themen rund um Energie, Verbrauch und Nachhaltigkeit auf visuelle und zugängliche Weise erfahrbar machen."</p>
+                </div>
+            </div>
+
+            <div class="animation-grid">
+
+                <?php
+                $animations = [
+                    ['file' => 'Anina Schroeder_LOOP',     'animator' => 'Alina Schroeder'],
+                    ['file' => 'Ash Zhou_LOOP',             'animator' => 'Ash Zhou'],
+                    ['file' => 'Cosima Schindler_LOOP',     'animator' => 'Cosima Schindler'],
+                    ['file' => 'Franziska Klima_LOOP',      'animator' => 'Franziska Klima'],
+                    ['file' => 'Jakob Stengel_LOOP',        'animator' => 'Jakob Stengel'],
+                    ['file' => 'Karen Treyer_LOOP',         'animator' => 'Karen Treyer'],
+                    ['file' => 'Marie-Luise Oertel_LOOP',   'animator' => 'Marie-Luise Oertel'],
+                ];
+                ?>
+
+                <?php foreach ($animations as $anim): ?>
+                    <div class="animation-item">
+                        <video autoplay loop muted playsinline>
+                            <source src="assets/video/<?= $anim['file'] ?>.webm" type="video/webm">
+                            <source src="assets/video/<?= $anim['file'] ?>.mp4" type="video/mp4">
+                        </video>
+                        <p class="animation-credit">Animation: <?= $anim['animator'] ?></p>
+                        <p class="animation-credit">Illustration: Charlotte Kelschenbach</p>
+                    </div>
+                <?php endforeach ?>
+
+            </div>
+        </section>
     </div>
 </main>
 
