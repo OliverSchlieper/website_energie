@@ -31,7 +31,7 @@
   overflow: hidden; /* Contains the image */
 
   /* matthias */
-  width: 80%;
+  width: 100%;
   margin: 3vh auto;
 }
 
@@ -55,10 +55,10 @@
 
 .book-tile-image {
   border-bottom: 3px solid var(--tile-border);
-  background: #e3e3e3; /* Subtle background if image doesn't fill */
+  background: #55866e;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 @media (min-width: 900px) {
