@@ -2,9 +2,9 @@
 
 .about-page {
   font-family: var(--font-family-sans);
-  max-width: 1200px;
+  max-width: var(--container-max-width);
   margin: 0 auto;
-  padding: 80px 30px 120px;
+  padding: 80px 36px 120px;
 }
 
 /* Header */

@@ -1,9 +1,9 @@
 /* --- AUTOREN SEITE: LINKED TO INDEX.CSS --- */
 
 .authors-page {
-  max-width: 1400px; /* Increased from 1200px to allow card breathing room in 2x2 */
+  max-width: var(--container-max-width);
   margin: 0 auto;
-  padding: 80px 40px;
+  padding: 80px 36px;
   /* Nutzt die globale Font-Definition */
   font-family: var(--font-family-sans);
 }
