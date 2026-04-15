@@ -5,7 +5,9 @@
 		<title>Neu / New</title>
 		<meta name="robots" content="noindex,nofollow" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAEBACAAEAAQBWAAAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAQAAAAEAgGAAAAH/P/YQAAAB1JREFUOI1j/M/A8J+BAsBEieZRA0YNGDVgMBkAAFhtAh6Zl924AAAAAElFTkSuQmCC"/>
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+        <link rel="icon" href="/favicon.ico" sizes="any">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 		<!--lrz: initial start page, 0.1 -->
 		<style>
 body {
